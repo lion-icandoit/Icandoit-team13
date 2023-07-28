@@ -1,0 +1,31 @@
+{
+  "name": "javascript_project",
+  "version": "1.0.0",
+  "description": "멋쟁이 사자처럼 자바스크립트 프로젝트",
+  "main": "main.js",
+  "scripts": {
+    "serve:frontend": "live-server client --host=localhost --port=5500 --no-browser",
+    "serve:backend": "json-server ./server/db/data.json",
+    "tailwind": "tailwindcss -i ./client/css/tailwind.css -o ./client/css/main.css --watch",
+    "start": "run-p serve:* tailwind"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "시맨틱 마크업",
+    "웹표준",
+    "함수형 프로그래밍"
+  ],
+  "author": "담당자",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "postcss-import": "^15.1.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
