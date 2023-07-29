@@ -534,21 +534,160 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
+.mr-\[40px\] {
+  margin-right: 40px;
+}
+
+.mr-\[52px\] {
+  margin-right: 52px;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
 }
 
 .hidden {
   display: none;
 }
 
+.h-\[34px\] {
+  height: 34px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[42px\] {
+  height: 42px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[132px\] {
+  width: 132px;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[12\.5vw\] {
+  width: 12.5vw;
+}
+
+.w-\[1780px\] {
+  width: 1780px;
+}
+
+.w-\[1440\] {
+  width: 1440;
+}
+
+.w-\[1440px\] {
+  width: 1440px;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.min-w-\[92px\] {
+  min-width: 92px;
+}
+
+.max-w-\[240px\] {
+  max-width: 240px;
+}
+
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.-bg--black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/Live-icon\.svg\'\)\] {
+  background-image: url('./../assets/images/Live-icon.svg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/glass-icon\.svg\'\)\] {
+  background-image: url('./../assets/images/glass-icon.svg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/paramount-icon\.svg\'\)\] {
+  background-image: url('./../assets/images/paramount-icon.svg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/tving-icon\.svg\'\)\] {
+  background-image: url('./../assets/images/tving-icon.svg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/tving-logo-icon\.svg\'\)\] {
+  background-image: url('./../assets/images/tving-logo-icon.svg');
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/program\/program_5\.svg\'\)\] {
+  background-image: url('./../assets/images/program/program_5.svg');
 }
 
 .from-cyan-500 {
@@ -561,9 +700,27 @@ video {
   --tw-gradient-to: #4338ca var(--tw-gradient-to-position);
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-\[70px\] {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.py-\[29px\] {
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .text-7xl {
@@ -571,8 +728,17 @@ video {
   line-height: 1;
 }
 
+.text-\[21\.3px\] {
+  font-size: 21.3px;
+}
+
 .font-black {
   font-weight: 900;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-indigo-500 {
