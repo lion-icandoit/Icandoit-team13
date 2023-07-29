@@ -690,6 +690,18 @@ video {
   background-image: url('./../assets/images/program/program_5.svg');
 }
 
+.bg-\[url\(\'\.\/assets\/images\/paramount-icon\.svg\'\)\] {
+  background-image: url('./assets/images/paramount-icon.svg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/viewing\.svg\'\)\] {
+  background-image: url('./assets/images/viewing.svg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/assets\/images\/viewing\.svg\'\)\] {
+  background-image: url('./../assets/images/viewing.svg');
+}
+
 .from-cyan-500 {
   --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
