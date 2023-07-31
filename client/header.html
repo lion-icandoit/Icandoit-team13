@@ -22,13 +22,13 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/bannerSwiper.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
     <title>TAING</title>
   </head>
 
   <body class="-font--font-family">
     <!-- 헤더영역 nav -->
-    <header class="header fixed z-20 flex w-[100%] px-[70px] py-[29px]">
+    <header class="header fixed z-20 flex w-[1920px] px-[70px] py-[29px]">
       <h1 class="mr-[52px] inline-block">
         <span class="a11yhidden">TAING 로고</span>
         <a
@@ -87,31 +87,14 @@
     <section class="banner relative z-10 h-[855px]">
       <div class="swiper-container" id="swiper">
         <div class="swiper-wrapper relative">
-          <div
-            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner.svg')] bg-auto bg-no-repeat"
-            aria-label="1번 배너"
-          ></div>
-          <div
-            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner1.webp')] bg-auto bg-no-repeat"
-            aria-label="2번 배너"
-          ></div>
-          <div
-            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner2.webp')] bg-auto bg-no-repeat"
-            aria-label="3번 배너"
-          ></div>
-          <div
-            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner3.webp')] bg-auto bg-no-repeat"
-            aria-label="4번 배너"
-          ></div>
+          <div class="swiper-slide swiper-slide-contents">
+            <img src="./assets/images/main-banner.svg" alt="재벌집 막내 아들" />
+            <p class="bannerInfo__text z-10">인생 2회차를 사는 판타지 드라마</p>
+          </div>
         </div>
 
         <!--pagination -->
-        <div class="bannerInfo z-10">
-          <p
-            class="bannerInfo__text absolute z-10 mb-[20px] flex shrink-0 -text--paragraph-xl -text--white"
-          >
-            인생 2회차를 사는 판타지 드라마
-          </p>
+        <div class="z-10">
           <button
             class="btnPause absolute z-10 h-[18px] w-[18px] bg-[url('./../assets/images/Pause.svg')] bg-auto bg-no-repeat"
             type="button"

@@ -30,6 +30,7 @@
   .bannerInfo__text{
      top : 37.5rem;
      left : 4.375rem;
+     @apply absolute z-10 mb-[20px] flex shrink-0 -text--paragraph-xl -text--white;
   }
 
   .header{
@@ -38,6 +39,10 @@
 
   .a11yhidden{
     @apply absolute w-1 h-1 overflow-hidden -m-1 border-0 p-0 whitespace-nowrap;
+  }
+
+  .swiper-slide-contents{
+    @apply h-[855px] w-[1920px]
   }
 
   .btnPause{

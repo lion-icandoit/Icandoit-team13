@@ -559,10 +559,6 @@ video {
   margin-right: auto;
 }
 
-.mb-\[20px\] {
-  margin-bottom: 20px;
-}
-
 .mr-\[10px\] {
   margin-right: 10px;
 }
@@ -675,22 +671,6 @@ video {
   background-image: url('./../assets/images/glass-icon.svg');
 }
 
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/main-banner\.svg\'\)\] {
-  background-image: url('./../assets/images/main-banner.svg');
-}
-
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/main-banner1\.webp\'\)\] {
-  background-image: url('./../assets/images/main-banner1.webp');
-}
-
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/main-banner2\.webp\'\)\] {
-  background-image: url('./../assets/images/main-banner2.webp');
-}
-
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/main-banner3\.webp\'\)\] {
-  background-image: url('./../assets/images/main-banner3.webp');
-}
-
 .bg-\[url\(\'\.\/\.\.\/assets\/images\/paramount-icon\.svg\'\)\] {
   background-image: url('./../assets/images/paramount-icon.svg');
 }
@@ -751,11 +731,6 @@ video {
 
 .-text--paragraph-large {
   font-size: 21.33px;
-  line-height: 160%,;
-}
-
-.-text--paragraph-xl {
-  font-size: 28.43px;
   line-height: 160%,;
 }
 
@@ -831,6 +806,15 @@ video {
 .bannerInfo__text{
   top : 37.5rem;
   left : 4.375rem;
+  position: absolute;
+  z-index: 10;
+  margin-bottom: 20px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 28.43px;
+  line-height: 160%,;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .header{
@@ -846,6 +830,11 @@ video {
   white-space: nowrap;
   border-width: 0px;
   padding: 0px;
+}
+
+.swiper-slide-contents {
+  height: 855px;
+  width: 1920px;
 }
 
 .btnPause{
