@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/common/bannerSwiper.js" type="module"></script>
     <title>TAING</title>
   </head>
   <body class="-bg--black -font--font-family">
@@ -138,11 +138,115 @@
       ></button>
     </section>
 
+    <h2 class="text-lg text-white">티빙에서 꼭 봐야하는 콘텐츠</h2>
+    <div class="swiper" id="first-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/contents1.png" alt="보물찾기" />
+          <span class="text- text-lg">보물찾기</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents2.png" alt="러브 캐치" />
+          <span class="text- text-lg">러브캐치</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents3.png" alt="술꾼도시여자들2" />
+          <span class="text-lg">술꾼도시여자들2</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents4.png" alt="털사 킹" />
+          <span class="text- text-lg">털사 킹</span>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/contents5.png"
+            alt="아무것도 하고 싶지 않아"
+          />
+          <span class="text- text-lg">아무것도 하고...</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents6.png" alt="블랙독" />
+          <span class="text- text-lg">블랙독</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents7.png" alt="우리들의 블루스" />
+          <span class="text- text-lg">우리들을 블루스</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents8.png" alt="킬라만자로" />
+          <span class="text- text-lg">킬라만자로</span>
+        </div>
+      </div>
+      <div class="swiper-button-prev" id="swiper-button-prev-first"></div>
+      <div class="swiper-button-next" id="swiper-button-next-first"></div>
+    </div>
+    <h3>Quick Vod</h3>
+    <div class="swiper" id="second-swiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/jtbcNews.png" alt="jtbc" />
+          <span class="text- text-lg"
+            >jtbc
+            <p class="text-sm">올해도 최악의 폭염 양상</p></span
+          >
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/almangg.png" alt="알맹이" />
+          <span class="text- text-lg"
+            >알맹이
+            <p>208화</p></span
+          >
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/classs.png" alt="차이나는 클라스" />
+          <span class="text- text-lg"
+            >차이나는 클라스
+            <p>254화</p></span
+          >
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/lives.png" alt="나는 살기로 했다" />
+          <span class="text- text-lg"
+            ><휴먼다큐>나는 살기로...
+            <p>10화</p></span
+          >
+        </div>
+        <div
+          class="swiper-slideonlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/heathy.png" alt="건강면세점" />
+          <span class="text- text-lg"
+            >건강면세점
+            <p>130화</p></span
+          >
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/mommy.png" alt="엄마의 봄날" />
+          <span class="text- text-lg"
+            >엄마의 봄날
+            <p>24화</p></span
+          >
+        </div>
+      </div>
+      <div class="swiper-button-prev" id="swiper-button-prev-second"></div>
+      <div class="swiper-button-next" id="swiper-button-next-second"></div>
+    </div>
+
     <section class="favorite">
       <h2 class="favorite__title">실시간 인기 프로그램</h2>
       <section class="favorite__program">
-        <ol class="program__list">
-          <li class="program__item">
+        <div class="swiper program__list">
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_1.svg"
@@ -158,8 +262,8 @@
                 <span class="program__info">재벌집 막내아들</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_2.svg"
@@ -175,8 +279,8 @@
                 <span class="program__info">술꾼도시여자들2</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_3.svg"
@@ -192,8 +296,8 @@
                 <span class="program__info">환혼: 빛과 그림자</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_4.svg"
@@ -209,8 +313,8 @@
                 <span class="program__info">캐나다 체크인</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_5.svg"
@@ -226,8 +330,8 @@
                 <span class="program__info">놀라운 토요일</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_6.svg"
@@ -240,11 +344,11 @@
                   alt="6위"
                   class="program__rank"
                 />
-                <span class="program__info">SHOW ME THE...</span>
+                <span class="program__info">SHOW ME THE MONEY</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_7.svg"
@@ -260,8 +364,8 @@
                 <span class="program__info">러브캐쳐 인 발리</span>
               </div>
             </a>
-          </li>
-          <li class="program__item">
+          </div>
+          <div class="program__item">
             <a href="/" class="program__link">
               <img
                 src="/assets/images/program/program_8.svg"
@@ -277,14 +381,16 @@
                 <span class="program__info">알쓸인잡</span>
               </div>
             </a>
-          </li>
-        </ol>
+          </div>
+        </div>
+        <div class="swiper-button-prev" id="swiper-button-prev-third"></div>
+        <div class="swiper-button-next" id="swiper-button-next-third"></div>
       </section>
 
       <h2 class="favorite__title">인기 LIVE 채널</h2>
       <section class="favorite__live">
-        <ol class="live__list">
-          <li class="live__item">
+        <div class="live__list">
+          <div class="live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/JTBC.svg"
@@ -304,8 +410,8 @@
                 </div>
               </div>
             </a>
-          </li>
-          <li class="live__item">
+          </div>
+          <div class="live__item">
             <a href="/" class="live__link">
               <img src="/assets/images/live/tvN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -321,8 +427,8 @@
                 </div>
               </div>
             </a>
-          </li>
-          <li class="live__item">
+          </div>
+          <div class="live__item">
             <a href="/" class="live__link">
               <img src="/assets/images/live/YTN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -338,8 +444,8 @@
                 </div>
               </div>
             </a>
-          </li>
-          <li class="live__item">
+          </div>
+          <div class="live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/drama.svg"
@@ -359,8 +465,8 @@
                 </div>
               </div>
             </a>
-          </li>
-          <li class="live__item">
+          </div>
+          <div class="live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/NewsTV.svg"
@@ -380,8 +486,8 @@
                 </div>
               </div>
             </a>
-          </li>
-          <li class="live__item">
+          </div>
+          <div class="live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/animation.svg"
@@ -401,8 +507,10 @@
                 </div>
               </div>
             </a>
-          </li>
-        </ol>
+          </div>
+        </div>
+        <div class="swiper-button-prev" id="swiper-button-prev-fourth"></div>
+        <div class="swiper-button-next" id="swiper-button-next-fourth"></div>
       </section>
     </section>
 
