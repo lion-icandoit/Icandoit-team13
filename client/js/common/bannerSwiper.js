@@ -1,5 +1,6 @@
 //swiper 기능 구현
-export const swiper = new Swiper('#swiper', {
+//import { Swiper } from './bannerSwiper';
+const swiper1 = new Swiper('#swiper', {
   slidesPerView: 'auto',
   centeredSlides: true,
   spaceBetween: 0,
@@ -23,8 +24,17 @@ export const swiper = new Swiper('#swiper', {
   speed: 3.5, // 트랜지션 속도를 0ms로 설정
 });
 
-export let swiperOnly = new Swiper('.mySwiper', {
+let swiperOnly = new Swiper('.mySwiper', {
   slidesPerView: 6,
   // spaceBetween: 15,
   freeMode: true,
 });
+
+
+let swiperLive = new Swiper('.liveswiper', {
+  slidesPerView: 8,
+  delay: 3000,
+  // spaceBetween: 15,
+  freeMode: true,
+});
+
