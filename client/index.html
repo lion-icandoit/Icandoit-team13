@@ -4,21 +4,712 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../assets/images/favicon.ico" type="image/ico" />
     <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image/xml+svg"
+      rel="shortcut"
+      href="./../assets/images/favicon.ico"
+      type="image/ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
-    <title>project</title>
+    <title>TAING</title>
   </head>
+  <body class="-bg--black -font--font-family">
+    <!-- 헤더영역 nav -->
+    <header class="header fixed z-20 flex w-[1920px] px-[70px] py-[29px]">
+      <h1 class="mr-[52px] inline-block">
+        <span class="a11yhidden">TAING 로고</span>
+        <a
+          href="#"
+          class="block h-[42px] w-[132px] bg-[url('./../assets/images/tving-logo-icon.svg')] bg-auto bg-no-repeat"
+        >
+        </a>
+      </h1>
+      <nav class="flex w-[100%] items-center justify-between -text--gray-200">
+        <ul class="flex items-center text-[21.3px]">
+          <li class="mr-[52px]">
+            <a href="#" class="flex opacity-80 hover:opacity-100">
+              <img
+                src="./../assets/images/Live-icon.svg"
+                alt="실시간"
+                class="mr-[10px]"
+              />
+              실시간
+            </a>
+          </li>
+          <li class="mr-[52px]">
+            <a href="#" class="opacity-80 hover:opacity-100">TV프로그램</a>
+          </li>
+          <li class="mr-[52px]">
+            <a href="#" class="opacity-80 hover:opacity-100">영화</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block h-[34px] w-[120px] bg-[url('./../assets/images/paramount-icon.svg')] bg-auto bg-no-repeat opacity-80 hover:opacity-100"
+            >
+              <span class="a11yhidden">파라마운트 플러스</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="flex">
+          <li>
+            <button
+              type="button"
+              class="mr-[40px] block h-[40px] w-[40px] bg-[url('./../assets/images/glass-icon.svg')] bg-auto bg-no-repeat opacity-80 hover:opacity-100"
+            >
+              <span class="a11yhidden">검색</span>
+            </button>
+          </li>
+          <li
+            class="block h-[40px] w-[40px] bg-[url('./../assets/images/tving-icon.svg')] bg-auto bg-no-repeat"
+          >
+            <span class="a11yhidden">사용자 정보</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <body>
-    <h1
-      class="mx-auto bg-gradient-to-r from-cyan-500 to-indigo-700 bg-clip-text text-7xl font-black text-transparent drop-shadow-lg"
+    <!-- 배너 swiper 영역 -->
+
+    <section class="banner relative z-10 h-[855px]">
+      <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper relative">
+          <div class="swiper-slide swiper-slide-contents">
+            <img src="./assets/images/main-banner.svg" alt="재벌집 막내 아들" />
+            <p class="bannerInfo__text z-10">인생 2회차를 사는 판타지 드라마</p>
+          </div>
+        </div>
+
+        <!--pagination -->
+        <div class="z-10">
+          <button
+            class="btnPause absolute z-10 h-[18px] w-[18px] bg-[url('./../assets/images/Pause.svg')] bg-auto bg-no-repeat"
+            type="button"
+            aria-label="정지"
+          ></button>
+          <div class="swiper-pagination absolute flex">
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 1"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 2"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 3"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 4"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
+        >자세히 보기</a
+      >
+
+      <!--buttons -->
+      <button
+        type="button"
+        class="swiper-button-prev opacity-50 hover:opacity-100"
+        aria-label="이전"
+      ></button>
+      <button
+        type="button"
+        class="swiper-button-next opacity-50 hover:opacity-100"
+        aria-label="다음"
+      ></button>
+    </section>
+
+    <section class="favorite">
+      <h2 class="favorite__title">실시간 인기 프로그램</h2>
+      <section class="favorite__program">
+        <ol class="program__list">
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_1.svg"
+                alt="재벌집 막내아들 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking1.svg"
+                  alt="1위"
+                  class="program__rank"
+                />
+                <span class="program__info">재벌집 막내아들</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_2.svg"
+                alt="술꾼도시여자들2 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking2.svg"
+                  alt="2위"
+                  class="program__rank"
+                />
+                <span class="program__info">술꾼도시여자들2</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_3.svg"
+                alt="환혼: 빛과 그림자 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking3.svg"
+                  alt="3위"
+                  class="program__rank"
+                />
+                <span class="program__info">환혼: 빛과 그림자</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_4.svg"
+                alt="캐나다 체크인 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking4.svg"
+                  alt="4위"
+                  class="program__rank"
+                />
+                <span class="program__info">캐나다 체크인</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_5.svg"
+                alt="놀라운 토요일 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking5.svg"
+                  alt="5위"
+                  class="program__rank"
+                />
+                <span class="program__info">놀라운 토요일</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_6.svg"
+                alt="SHOW ME THE MONEY 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking6.svg"
+                  alt="6위"
+                  class="program__rank"
+                />
+                <span class="program__info">SHOW ME THE...</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_7.svg"
+                alt="러브캐쳐 인 발리 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking7.svg"
+                  alt="7위"
+                  class="program__rank"
+                />
+                <span class="program__info">러브캐쳐 인 발리</span>
+              </div>
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link">
+              <img
+                src="/assets/images/program/program_8.svg"
+                alt="알쓸인잡 포스터"
+                class="program__img"
+              />
+              <div class="program__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking8.svg"
+                  alt="8위"
+                  class="program__rank"
+                />
+                <span class="program__info">알쓸인잡</span>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <h2 class="favorite__title">인기 LIVE 채널</h2>
+      <section class="favorite__live">
+        <ol class="live__list">
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img
+                src="/assets/images/live/JTBC.svg"
+                alt=""
+                class="live__img"
+              />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking1.svg"
+                  alt="1위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">JTBC</span>
+                  <span class="live__info">JTBC 뉴스룸</span>
+                  <span class="live__viewing--rate">27.9%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img src="/assets/images/live/tvN.svg" alt="" class="live__img" />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking2.svg"
+                  alt="2위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">tvN</span>
+                  <span class="live__info">줄 서는 식당 43회</span>
+                  <span class="live__viewing--rate">26.3%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img src="/assets/images/live/YTN.svg" alt="" class="live__img" />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking3.svg"
+                  alt="3위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">YTN</span>
+                  <span class="live__info">뉴스가 있는 저녁</span>
+                  <span class="live__viewing--rate">9%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img
+                src="/assets/images/live/drama.svg"
+                alt=""
+                class="live__img"
+              />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking4.svg"
+                  alt="4위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">JTBC2</span>
+                  <span class="live__info">재벌집 막내아들 5화</span>
+                  <span class="live__viewing--rate">6.2%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img
+                src="/assets/images/live/NewsTV.svg"
+                alt=""
+                class="live__img"
+              />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking5.svg"
+                  alt="5위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">연합뉴스 TV</span>
+                  <span class="live__info">뉴스프라임</span>
+                  <span class="live__viewing--rate">4.6%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link">
+              <img
+                src="/assets/images/live/animation.svg"
+                alt=""
+                class="live__img"
+              />
+              <div class="live__infoWrapper">
+                <img
+                  src="/assets/images/ranking/ranking6.svg"
+                  alt="6위"
+                  class="live__rank"
+                />
+                <div class="live__infoContainer">
+                  <span class="live__title">애니맥스</span>
+                  <span class="live__info">명탐정코난9(자막) 33화</span>
+                  <span class="live__viewing--rate">4.3%</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </section>
+    </section>
+
+    <section class="only overflow-hidden">
+      <h2
+        class="onlyTitle --font-family -text--white mobile:mb-[4px] mobile:mt-[16px] mobile:pl-[8px] mobile:-text--label-small tablet:mb-[9px] tablet:mt-[28px] tablet:pl-[40px] tablet:-text--heading-medium desktop:mb-[12px] desktop:mt-[39px] desktop:pl-[70px] desktop:-text--label-xl"
+      >
+        오직 티빙에만 있어요
+      </h2>
+      <div
+        class="onlyPostersWrapper swiperOnly mySwiper relative min-h-[80%] w-full"
+      >
+        <div
+          class="swiper-wrapper onlyPosters flex mobile:mb-[32px] mobile:pl-[8px] tablet:mb-[55px] tablet:pl-[40px] desktop:mb-[71.78px] desktop:pl-[70px]"
+        >
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster01.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster02.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster03.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster04.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster05.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster06.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/only/only-poster07.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="eventWrapper overflow-hidden">
+      <div
+        class="eventBanner rounded-[4px] mobile:mt-[32px] mobile:pl-[8px] tablet:mt-[55px] tablet:pl-[40px] desktop:mt-[79.1px] desktop:pl-[70px]"
+      >
+        <a
+          href="#"
+          class="block bg-[url('./../assets/images/only/sports.svg')] bg-contain bg-no-repeat mobile:h-[30px] mobile:w-[304px] mobile:pr-[8px] tablet:h-[68px] tablet:w-[690px] tablet:pr-[39px] desktop:h-[177px] desktop:w-[1780px] desktop:pr-[70px]"
+        ></a>
+      </div>
+      <h2
+        class="eventTitle -text--white mobile:mb-[4px] mobile:mt-[16px] mobile:pl-[8px] mobile:-text--label-small tablet:mb-[8px] tablet:mt-[28px] tablet:pl-[40px] tablet:-text--heading-medium desktop:mb-[12px] desktop:mt-[36px] desktop:pl-[70px] desktop:-text--heading-xl"
+      >
+        이벤트
+      </h2>
+      <div class="swiperOnly mySwiper relative min-h-[80%] w-full">
+        <div
+          class="swiper-wrapper events flex mobile:pl-[8px] tablet:pl-[40px] desktop:pl-[70px]"
+        >
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-4.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-5.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-6.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+          >
+            <img
+              class="block w-full object-contain"
+              src="./assets/images/event-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mobile:mb-[82px] mobile:mr-[16px] mobile:mt-[68px] mobile:pl-[8px] mobile:-text--paragraph-small tablet:mb-[100px] tablet:mr-[40px] tablet:mt-[98px] tablet:pl-[40px] tablet:-text--paragraph-small desktop:mb-[170px] desktop:mt-[176px] desktop:pl-[70px] desktop:pr-[68px] desktop:-text--paragraph-large"
     >
-      Javascript project
-    </h1>
+      <div
+        class="topWrapper flex justify-between border-b border-solid border-gray-800 pb-[27px] mobile:mb-[12px] tablet:mb-[16px] desktop:mb-[20px]"
+      >
+        <div class="topLeft">
+          <dl class="announcement flex">
+            <dt
+              class="-text--gray-500 mobile:mr-[4px] tablet:mr-[20px] desktop:mr-[20px]"
+            >
+              공지사항
+            </dt>
+            <dd class="-text--gray-200">
+              <strong class="-text--gray-200"
+                >[안내] 주주총회에 갈음하는 공고</strong
+              >
+            </dd>
+          </dl>
+        </div>
+        <div class="topRight mobile:hidden">
+          <ul class="flex">
+            <li class="-text--gray-200 tablet:mr-[16px] desktop:mr-[16px]">
+              <a href="#">브랜드 바로가기</a>
+            </li>
+            <li class="-text--gray-200">+</li>
+            <li
+              class="-text--gray-500 tablet:ml-[16px] tablet:mr-[16px] desktop:ml-[30px] desktop:mr-[30px]"
+            >
+              |
+            </li>
+            <li class="-text--gray-200 tablet:mr-[16px] desktop:mr-[16px]">
+              <a href="#">그룹 계열사 바로가기</a>
+            </li>
+            <li class="-text--gray-200">+</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottomWrapper">
+        <ul
+          class="footerNav flex -text--gray-200 mobile:flex-col tablet:mb-[12px] desktop:mb-[24px]"
+        >
+          <li class="mobile:mb-[4px] tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>고객센터</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>이용약관</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>개인정보처리방침</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>청소년 보호정책</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>법적고지</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>이벤트</strong></a>
+          </li>
+          <li class="tablet:mr-[20px] desktop:mr-[36px]">
+            <a href="#"><strong>인재채용</strong></a>
+          </li>
+        </ul>
+        <address class="-text--gray-500 mobile:hidden">
+          <p>
+            <span>대표이사 : YANG JIEUL</span>
+            <span> | </span>
+            <a href="#" class="underline">사업자정보확인</a>
+            <span> | </span>
+            <span>사업자등록번호 : 188-88-01893</span>
+            <span> | </span>
+            <span>통신판매신고번호 : 2020-서울마포-3641호</span>
+          </p>
+          <p>
+            <span
+              >사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브
+              15층(상암동)
+            </span>
+            <span> | </span>
+            <span>호스팅사업자 : 씨제이올리브네트웍스(주)</span>
+          </p>
+          <p>
+            <a href="#" class="underline">고객문의 바로가기</a>
+            <span> | </span>
+            <a href="#" class="underline">대표메일 : tiving@cj.net</a>
+            <span> | </span>
+            <a href="#" class="underline"
+              >고객센터 : 1670-1525(평일/주말 09시~18시, 공휴일 휴무)</a
+            >
+          </p>
+          <p>
+            <span
+              >ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780</span
+            >
+            <span> | </span>
+            <span>Mnet 고객센터(반송편성문의) : 1855-1631</span>
+          </p>
+        </address>
+        <div class="snsIconWrapper tablet:mb-[12px] desktop:mb-[24px]">
+          <ul
+            class="snsIcons flex mobile:mb-[12px] mobile:mt-[8px] tablet:mt-[12px] desktop:mt-[24px]"
+          >
+            <li class="snsIcon">
+              <a
+                href="http://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-[8px] block bg-[url('./../assets/images/sns/facebook.svg')] bg-contain bg-no-repeat mobile:h-[15px] mobile:w-[15px] tablet:h-[20px] tablet:w-[20px] desktop:h-[30px] desktop:w-[30px]"
+              ></a>
+            </li>
+            <li class="snsIcon">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-[8px] block bg-[url('./../assets/images/sns/instagram.svg')] bg-contain bg-no-repeat mobile:h-[15px] mobile:w-[15px] tablet:h-[20px] tablet:w-[20px] desktop:h-[30px] desktop:w-[30px]"
+              ></a>
+            </li>
+            <li class="snsIcon">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-[8px] block bg-[url('./../assets/images/sns/twitter.svg')] bg-contain bg-no-repeat mobile:h-[15px] mobile:w-[15px] tablet:h-[20px] tablet:w-[20px] desktop:h-[30px] desktop:w-[30px]"
+              ></a>
+            </li>
+            <li class="snsIcon">
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-[8px] block bg-[url('./../assets/images/sns/youtube.svg')] bg-contain bg-no-repeat mobile:h-[15px] mobile:w-[15px] tablet:h-[20px] tablet:w-[20px] desktop:h-[30px] desktop:w-[30px]"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyRight -text--gray-500">
+          <span>Copyright ⓒ 주식회사 티빙 All right reserved.</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
