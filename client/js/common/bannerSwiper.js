@@ -1,6 +1,5 @@
 //swiper 기능 구현
-//import { Swiper } from './bannerSwiper';
-const swiper1 = new Swiper('#swiper', {
+export const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
   centeredSlides: true,
   spaceBetween: 0,
@@ -30,11 +29,22 @@ let swiperOnly = new Swiper('.mySwiper', {
   freeMode: true,
 });
 
-
-let swiperLive = new Swiper('.liveswiper', {
-  slidesPerView: 8,
-  delay: 3000,
-  // spaceBetween: 15,
-  freeMode: true,
+const firstSwiper = new Swiper('#first-swiper', {
+  slidesPerView: 6,
+  spaceBetween: 5,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-first',
+    prevEl: '#swiper-button-prev-first',
+  },
 });
 
+const secondSwiper = new Swiper('#second-swiper', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-second',
+    prevEl: '#swiper-button-prev-second',
+  },
+});

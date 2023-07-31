@@ -793,6 +793,14 @@ video {
   font-size: 21.3px;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
 .-text--gray-200 {
   --tw-text-opacity: 1;
   color: rgb(196 196 196 / var(--tw-text-opacity));
@@ -811,6 +819,11 @@ video {
 .text-indigo-500 {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1515,7 +1528,3 @@ video {
     line-height: 160%,;
   }
 }
-
-
-
-
