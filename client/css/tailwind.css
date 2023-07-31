@@ -6,7 +6,7 @@
 
 
 .favorite {
-    @apply text-white w-full pl-[4.375rem];
+    @apply text-white pl-[4.375rem];
     background: #000000;
 }
 @media (max-width: 480px) {
@@ -32,6 +32,7 @@
         @apply text-base;
     }
 }
+
 .favorite__program {
     @apply overflow-hidden;
 }
@@ -42,17 +43,17 @@
     @apply flex justify-start items-stretch gap-4 h-full;
     flex-flow: row nowrap;
 }
-.swiper-slide {
+.swiper-slid {
     @apply flex justify-start items-stretch gap-0 flex-[1_0_calc(13.5%_-_16px)] max-w-[240px] mb-4 md:min-w-[11.25rem];
     flex-flow: row nowrap;
 }
 @media (max-width: 480px) {
-    .swiper-slide {
+    .swiper-slid {
         @apply flex-[1_0_calc(31.25%_-_16px)] min-w-[9.375rem];
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-    .swiper-slide {
+    .swiper-slid {
         @apply flex-[1_0_calc(19.6%_-_16px)] min-w-[10rem];
     }
 }
@@ -91,21 +92,21 @@
         @apply min-w-[9.375rem];
     }
 }
-.swiper-container {
+.liveswiper {
     @apply flex justify-start items-stretch gap-4 h-full md:pb-9;
     flex-flow: row nowrap;
 }
-.swiper-slide {
+.swiper-slid {
     @apply flex justify-start items-stretch gap-3 flex-[1_0_calc(21%_-_16px)] max-w-[345px] mb-4 md:min-w-[10.625rem];
     flex-flow: row nowrap;
 }
 @media (max-width: 480px) {
-    .swiper-slide {
+    .swiper-slid {
         @apply flex-[1_0_calc(50.33%_-_16px)] min-w-[8.75rem];
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-    .swiper-slide {
+    .swiper-slid {
         @apply flex-[1_0_calc(32.2%_-_16px)] min-w-[9.375rem];
     }
 }

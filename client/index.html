@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/common/bannerSwiper.js" type="module"></script>
     <title>TAING</title>
   </head>
 
@@ -142,9 +142,9 @@
     <section class="favorite">
       <h2 class="favorite__title">실시간 인기 프로그램</h2>
       <section class="favorite__program">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="swiper liveswiper">
+          <div class="swiper-wrapper swiperLive liveSwiper">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_1.svg"
@@ -161,7 +161,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_2.svg"
@@ -178,7 +178,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_3.svg"
@@ -195,7 +195,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_4.svg"
@@ -212,7 +212,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_5.svg"
@@ -229,7 +229,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_6.svg"
@@ -246,7 +246,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_7.svg"
@@ -263,7 +263,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slid">
               <a href="/" class="program__link">
                 <img
                   src="/assets/images/program/program_8.svg"
@@ -286,8 +286,8 @@
 
       <h2 class="favorite__title">인기 LIVE 채널</h2>
       <section class="favorite__live">
-        <div class="swiper-container">
-          <div class="swiper-slide">
+        <div class="swiper-wrapper swiperLive liveSwiper">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/JTBC.svg"
@@ -308,7 +308,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img src="/assets/images/live/tvN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -325,7 +325,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img src="/assets/images/live/YTN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -342,7 +342,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/drama.svg"
@@ -363,7 +363,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/NewsTV.svg"
@@ -384,7 +384,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide favorite__program">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/animation.svg"
