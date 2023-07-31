@@ -4,67 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../assets/images/favicon.ico" type="image/ico" />
     <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image xml+svg"
+      rel="shortcut"
+      href="./../assets/images/favicon.ico"
+      type="image/ico"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
-    <script src="./js/main.js" type="module"></script>
-    <title>project</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/bannerSwiper.js" type="module"></script>
+    <title>TAING</title>
   </head>
 
-  <body class="-bg--black">
+  <body class="-font--font-family">
     <!-- 헤더영역 nav -->
-    <header class="flex px-[70px] py-[29px]">
+    <header class="header fixed z-20 flex w-[100%] px-[70px] py-[29px]">
       <h1 class="mr-[52px] inline-block">
+        <span class="a11yhidden">TAING 로고</span>
         <a
           href="#"
           class="block h-[42px] w-[132px] bg-[url('./../assets/images/tving-logo-icon.svg')] bg-auto bg-no-repeat"
         >
         </a>
       </h1>
-      <nav class="flex w-[100%] items-center justify-between text-gray-200">
+      <nav class="flex w-[100%] items-center justify-between -text--gray-200">
         <ul class="flex items-center text-[21.3px]">
           <li class="mr-[52px]">
-            <a href="#" class="flex">
+            <a href="#" class="flex opacity-80 hover:opacity-100">
               <img
                 src="./../assets/images/Live-icon.svg"
-                alt=""
+                alt="실시간"
                 class="mr-[10px]"
               />
               실시간
             </a>
           </li>
-          <li class="mr-[52px]"><a href="#">TV프로그램</a></li>
-          <li class="mr-[52px]"><a href="#">영화</a></li>
+          <li class="mr-[52px]">
+            <a href="#" class="opacity-80 hover:opacity-100">TV프로그램</a>
+          </li>
+          <li class="mr-[52px]">
+            <a href="#" class="opacity-80 hover:opacity-100">영화</a>
+          </li>
           <li>
             <a
               href="#"
-              class="block h-[34px] w-[120px] bg-[url('./../assets/images/paramount-icon.svg')] bg-auto bg-no-repeat"
-            ></a>
+              class="block h-[34px] w-[120px] bg-[url('./../assets/images/paramount-icon.svg')] bg-auto bg-no-repeat opacity-80 hover:opacity-100"
+            >
+              <span class="a11yhidden">파라마운트 플러스</span>
+            </a>
           </li>
         </ul>
         <ul class="flex">
           <li>
-            <a
-              href="#"
-              class="mr-[40px] block h-[40px] w-[40px] bg-[url('./../assets/images/glass-icon.svg')] bg-auto bg-no-repeat"
-            ></a>
+            <button
+              type="button"
+              class="mr-[40px] block h-[40px] w-[40px] bg-[url('./../assets/images/glass-icon.svg')] bg-auto bg-no-repeat opacity-80 hover:opacity-100"
+            >
+              <span class="a11yhidden">검색</span>
+            </button>
           </li>
-          <li>
-            <a
-              href="#"
-              class="block h-[40px] w-[40px] bg-[url('./../assets/images/tving-icon.svg')] bg-auto bg-no-repeat"
-            ></a>
+          <li
+            class="block h-[40px] w-[40px] bg-[url('./../assets/images/tving-icon.svg')] bg-auto bg-no-repeat"
+          >
+            <span class="a11yhidden">사용자 정보</span>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- 배너 swiper 영역 -->
+
+    <section class="banner relative z-10 h-[855px]">
+      <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper relative">
+          <div
+            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner.svg')] bg-auto bg-no-repeat"
+            aria-label="1번 배너"
+          ></div>
+          <div
+            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner1.webp')] bg-auto bg-no-repeat"
+            aria-label="2번 배너"
+          ></div>
+          <div
+            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner2.webp')] bg-auto bg-no-repeat"
+            aria-label="3번 배너"
+          ></div>
+          <div
+            class="swiper-slide h-[855px] w-[1920px] bg-[url('./../assets/images/main-banner3.webp')] bg-auto bg-no-repeat"
+            aria-label="4번 배너"
+          ></div>
+        </div>
+
+        <!--pagination -->
+        <div class="bannerInfo z-10">
+          <p
+            class="bannerInfo__text absolute z-10 mb-[20px] flex shrink-0 -text--paragraph-xl -text--white"
+          >
+            인생 2회차를 사는 판타지 드라마
+          </p>
+          <button
+            class="btnPause absolute z-10 h-[18px] w-[18px] bg-[url('./../assets/images/Pause.svg')] bg-auto bg-no-repeat"
+            type="button"
+            aria-label="정지"
+          ></button>
+          <div class="swiper-pagination absolute flex">
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 1"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 2"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 3"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 4"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
+        >자세히 보기</a
+      >
+
+      <!--buttons -->
+      <button
+        type="button"
+        class="swiper-button-prev opacity-50 hover:opacity-100"
+        aria-label="이전"
+      ></button>
+      <button
+        type="button"
+        class="swiper-button-next opacity-50 hover:opacity-100"
+        aria-label="다음"
+      ></button>
+    </section>
   </body>
 </html>
