@@ -835,38 +835,49 @@ video {
   opacity: 0.8;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .banner__more {
-  right: 4.375rem;
+  border: 1px solid #a6a6a6;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
   top: 37.625rem;
-  border-width: 1px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(166 166 166 / var(--tw-border-opacity));
-  --tw-backdrop-blur: blur(30px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  right: 4.375rem;
 }
 
 .swiper-button-next::after,
-    .swiper-button-prev::after {
-  --tw-text-opacity: 1;
-  color: rgb(137 137 137 / var(--tw-text-opacity));
+  .swiper-button-prev::after {
+  color: #898989;
 }
 
 .swiper-pagination {
-  left: 6rem;
-  bottom: 10.8rem;
+  bottom: 10.8rem !important;
+  left: 6rem !important;
 }
 
 .swiper-pagination-bullet {
-  height: 0.75rem;
-  width: 0.75rem;
-  background : white;
+  width: 12px;
+  height: 12px;
+  background: white;
 }
 
 .bannerInfo__text {
-  left: 4.375rem;
   top: 37.5rem;
+  left: 4.375rem;
   position: absolute;
   z-index: 10;
   margin-bottom: 20px;
@@ -878,8 +889,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.header{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.00) 100%);
+.header {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
 }
 
 .a11yhidden {
@@ -898,14 +913,27 @@ video {
   width: 1920px;
 }
 
+/* only */
+
 .btnPause {
-  left: 4.375rem;
   bottom: 10.7055rem;
+  left: 4.375rem;
 }
 
-/*img {
-        max-width: initial !important;
-    }*/
+.swiperOnlyBtn {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background: #000;
+}
 
 .favorite {
   background: #000000;
@@ -1212,6 +1240,11 @@ video {
 .live__img {
   border-radius: 0.25rem;
   margin-bottom: 0.75rem;
+}
+
+.hover\:-translate-y-\[10px\]:hover {
+  --tw-translate-y: -10px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:opacity-100:hover {
