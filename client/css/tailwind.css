@@ -55,6 +55,18 @@
   padding-left: 70px;
 }
 
+.content__infoWrapper {
+  position: relative;
+  top: -1.375rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.3125rem;
+  min-height: 3.125rem;
+}
+
+
 @media (min-width: 481px) and (max-width: 767px) {
   .contents__title {
     font-size: 1rem;
@@ -474,19 +486,3 @@
   }
 
 
-.contents__title {
-  color: #ffffff;
-  font-size: 28.43px;
-  font-weight: 700;
-  margin: 0 0.75rem 0 5rem;
-  margin-bottom: 0.75rem;
-}
-.content__info {
-  color:#c4c4c4;
-  font-size: 1.2rem;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 70px;
-}
