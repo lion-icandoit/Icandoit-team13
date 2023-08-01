@@ -29,11 +29,11 @@
     <!-- 헤더영역 nav -->
     <header class="header fixed z-20 flex w-[1920px] px-[70px] py-[29px]">
       <h1 class="mr-[52px] inline-block">
-        <span class="a11yhidden">TAING 로고</span>
         <a
-          href="#"
+          href="./header.html"
           class="block h-[42px] w-[132px] bg-[url('./../assets/images/tving-logo-icon.svg')] bg-auto bg-no-repeat"
         >
+          <span class="a11yhidden">TAING 로고</span>
         </a>
       </h1>
       <nav class="flex w-[100%] items-center justify-between -text--gray-200">
@@ -84,38 +84,46 @@
     <!-- 배너 swiper 영역 -->
 
     <section class="banner relative z-10 h-[855px]">
-      <div class="swiper-container" id="swiper">
-        <div class="swiper-wrapper relative">
-          <div class="swiper-slide swiper-slide-contents">
-            <img src="./assets/images/main-banner.svg" alt="재벌집 막내 아들" />
-            <p class="bannerInfo__text z-10">인생 2회차를 사는 판타지 드라마</p>
-          </div>
-        </div>
+      <div class="swiper" id="swiper">
+        <div class="swiper-wrapper relative"></div>
+        <!--buttons -->
+        <button
+          type="button"
+          class="swiper-button-prev opacity-50 hover:opacity-100"
+          aria-label="이전"
+          id="btnPrev"
+        ></button>
+        <button
+          type="button"
+          class="swiper-button-next opacity-50 hover:opacity-100"
+          aria-label="다음"
+          id="btnNext"
+        ></button>
 
         <!--pagination -->
-        <div class="z-10">
-          <button
-            class="btnPause absolute z-10 h-[18px] w-[18px] bg-[url('./../assets/images/Pause.svg')] bg-auto bg-no-repeat"
-            type="button"
-            aria-label="정지"
-          ></button>
-          <div class="swiper-pagination absolute flex">
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 1"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 2"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 3"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 4"
-            ></span>
+        <div class="navigation relative z-10">
+          <div>
+            <button type="button" class="bannerbtnPause play absolute z-10">
+              <img src="./assets/images/Pause.svg" alt="슬라이드 정지 버튼" />
+            </button>
+            <div class="swiper-pagination absolute flex">
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 1"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 2"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 3"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 4"
+              ></span>
+            </div>
           </div>
         </div>
       </div>
@@ -124,18 +132,6 @@
         class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
         >자세히 보기</a
       >
-
-      <!--buttons -->
-      <button
-        type="button"
-        class="swiper-button-prev opacity-50 hover:opacity-100"
-        aria-label="이전"
-      ></button>
-      <button
-        type="button"
-        class="swiper-button-next opacity-50 hover:opacity-100"
-        aria-label="다음"
-      ></button>
     </section>
 
     <h2 class="text-lg text-white">티빙에서 꼭 봐야하는 콘텐츠</h2>
@@ -389,9 +385,9 @@
       </div>
 
       <h2 class="favorite__title">인기 LIVE 채널</h2>
-      <div class="favorite__live">
-        <div class="live__list">
-          <div class="live__item">
+      <div class="favorite__live" id="fourth-swiper">
+        <div class="swiper-wrapper live__list">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/JTBC.svg"
@@ -412,7 +408,7 @@
               </div>
             </a>
           </div>
-          <div class="live__item">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img src="/assets/images/live/tvN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -429,7 +425,7 @@
               </div>
             </a>
           </div>
-          <div class="live__item">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img src="/assets/images/live/YTN.svg" alt="" class="live__img" />
               <div class="live__infoWrapper">
@@ -446,7 +442,7 @@
               </div>
             </a>
           </div>
-          <div class="live__item">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/drama.svg"
@@ -467,7 +463,7 @@
               </div>
             </a>
           </div>
-          <div class="live__item">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/NewsTV.svg"
@@ -488,7 +484,7 @@
               </div>
             </a>
           </div>
-          <div class="live__item">
+          <div class="swiper-slide live__item">
             <a href="/" class="live__link">
               <img
                 src="/assets/images/live/animation.svg"
