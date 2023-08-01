@@ -1613,15 +1613,15 @@ video {
 }
 
 .content-list {
-  width: 163.29px;
-  height: 325.99px;
+  width: 182.04px;
+  height: 261.68px;
   margin-left: 30px;
   transform: scale(1.0); /* 이미지 확대 */
   transition: transform .5s; /* 시간 설정 */
 }
 .slide-list {
-  width: 217.73px;
-  height: 123.05px;
+  width: 235.74px;
+  height: 132.55px;
   margin: 0 30px 10px;
   transform: scale(1.0); /* 이미지 확대 */
   transition: transform .5s; /* 시간 설정 */
