@@ -314,7 +314,45 @@
     @apply h-[855px] w-[1920px];
   }
 
+  .content-list {
+    width: 180px;
+    height: 258.75;
+    margin-left: 70px;
+    transform: scale(1.0); /* 이미지 확대 */
+    transition: transform .5s; /* 시간 설정 */
+  }
+   
+  .content-list:hover {    /* hover 시 애니메이션 */
+     transform: scale(1.2);   /* 이미지 확대 */
+     transition: transform .5s;  /* 시간 설정 */
+  }
+  
+  }
+  .slide-list {
+    width: 260.54px;
+    height: 175.35px;
+    margin: 0 70px 0;
+    transform: scale(1.0); /* 이미지 확대 */
+    transition: transform .5s; /* 시간 설정 */
+  }
+   .slide-list:hover {
+    transform: scale(1.2);   /* 이미지 확대 */
+     transition: transform .5s;  /* 시간 설정 */
+   }
 
-
-
-
+.contents__title {
+  color: #ffffff;
+  font-size: 28.43px;
+  font-weight: 700;
+  margin: 0 0.75rem 0 5rem;
+  margin-bottom: 0.75rem;
+}
+.content__info {
+  color:#c4c4c4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 70px;
+}
