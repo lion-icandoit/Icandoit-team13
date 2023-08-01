@@ -48,10 +48,16 @@
   .btnPause{
     left : 4.375rem;
     bottom: 10.7055rem;
-
+    width: 18px;
+    height : 18px;
   }
 
- 
+  .btnPause img{
+    top : 50px;
+    left : 70px;
+  }
+
+
 }
 
 

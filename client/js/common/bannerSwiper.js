@@ -1,8 +1,10 @@
-
+/* global Swiper */
 
 import { getNode } from '../../lib/dom/getNode.js';
 import { clearContents } from '../../lib/dom/clearContents.js';
 import { insertLast } from '../../lib/dom/insert.js';
+// import { insertLast, getNode, attr} from '../../lib/dom/index.js';
+
 
 
 const bannerData = {
@@ -30,8 +32,8 @@ const bannerData = {
   ],
 };
 
-let swiper;
 
+let swiper;
 export function bannerSwiper() {
   const swiper = new Swiper('#swiper', {
     slidesPerView: 'auto',
@@ -55,13 +57,27 @@ export function bannerSwiper() {
     fadeEffect: {
       crossFade: true,
     },
-    speed: 3.5, // 트랜지션 속도를 0ms로 설정
+    breakpoints: { //반응형 조건 속성
+      320: { //320 이상일 경우
+        slidesPerView: 1, 
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+    },
+    speed: 3.5, 
+  
   });
   return swiper;
 }
 
-//배너 영역  html 템플릿 생성 함수
-export function getBannerImage(src, alt, text) {
+
+//배너 영역  html 템플릿 생성 
+export  function getBannerImage(src, alt, text) {
+ 
   const template = /*html*/ `
     <div class="swiper-slide swiper-slide-contents">
       <img src="${src}" alt="${alt}" />
@@ -72,12 +88,17 @@ export function getBannerImage(src, alt, text) {
 }
 
 // 배너 이미지, 텍스트 랜더링하는 함수
-export function renderBanner() {
+export async function renderBanner() {
   const bannerContainer = getNode('#swiper .swiper-wrapper');
-  const pauseBtn = getNode('#btnPause');
+  const pauseBtnImage = getNode('.btn__pause');
+  const pauseBtn = getNode('.btnPause');
+  
   pauseBtn.addEventListener('click', toggleAutoPlay);
   
- 
+  const response = await fetch('http://localhost:3000/bannerData')
+  const data = await response.json()
+  console.log(data);
+
   clearContents(bannerContainer);
 
   bannerData.banner.forEach((item) => {
@@ -91,13 +112,22 @@ export function renderBanner() {
 
 
   function toggleAutoPlay(){
+    const pauseBtn = getNode('.btnPause');
     if(swiper.autoplay.running){
       swiper.autoplay.stop();
+      pauseBtn.setAttribute('aria-label', '재생');
+      pauseBtn.style.backgroundImage ="url('./assets/images/Pause.svg')";
+      clearContents(pauseBtnImage);
     } else {
-      swiper.autoplay.start();
-    }
+          swiper.autoplay.start();
+          pauseBtn.setAttribute('aria-label', '정지');
+          // clearContents(pauseBtnImage);
+          pauseBtn.style.backgroundImage ="url('./assets/images/Play.svg')";
+        }
+    
   }
 
 }
 renderBanner();
+
 
