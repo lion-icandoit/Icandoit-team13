@@ -4,8 +4,108 @@
 @tailwind components;
 @tailwind utilities;
 
+.slide-list {
+  width: 260.54px;
+  height: 175.35px;
+  margin: 0 70px 0;
+  transform: scale(1.0); 
+  transition: transform .5s;
+}
+.content-list {
+  width: 180px;
+  height: 258.75;
+  margin-left: 70px;
+  transform: scale(1.0); 
+  transition: transform .5s; 
+}
+
+.content-list:hover {
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+
+.slide-list:hover {
+  transform: scale(1.2);   
+  transition: transform .5s; 
+}
+
+.contents__title {
+  color: #ffffff;
+  font-size: 28.43px;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.content__title {
+  color: #ffffff;
+  font-size: 28.43px;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.content__info {
+  color:#c4c4c4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 70px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .contents__title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contents__title {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .content__title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content__title {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .contents__item {
+    flex: 1 0 calc(19.6% - 16px);
+    min-width: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .contents__item {
+    min-width: 11.25rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .content__item {
+    flex: 1 0 calc(19.6% - 16px);
+    min-width: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .content__item {
+    min-width: 11.25rem;
+  }
+}
+
 .favorite {
-  background: #000000;
   color: #ffffff;
   width: 100%;
   padding-left: 4.375rem;
@@ -52,6 +152,17 @@
   gap: 1rem;
   height: 100%;
 }
+
+.program__link:hover {
+  transform: scale(1.1);   
+  transition: transform .5s; 
+}
+
+.live__link:hover {
+  transform: scale(1.1);   
+  transition: transform .5s; 
+}
+
 .program__item {
   flex-flow: row nowrap;
   justify-content: flex-start;
