@@ -534,19 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-<<<<<<<<< Temporary merge branch 1
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .fixed {
   position: fixed;
 }
@@ -565,6 +552,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mr-\[10px\] {
@@ -709,8 +700,9 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/Pause\.svg\'\)\] {
-  background-image: url('./../assets/images/Pause.svg');
+.-bg--gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/\.\.\/assets\/images\/glass-icon\.svg\'\)\] {
@@ -918,26 +910,16 @@ video {
   width: 1920px;
 }
 
-/* only */
-
-.btnPause {
+.bannerBtnPause{
+  left : 4.375rem;
   bottom: 10.7055rem;
-  left: 4.375rem;
+  width: 18px;
+  height : 18px;
 }
 
-.swiperOnlyBtn {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  background: #000;
+.bannerBtnPause img{
+  top : 50px;
+  left : 70px;
 }
 
 .favorite {
@@ -1261,10 +1243,6 @@ video {
     margin-bottom: 12px;
   }
 
-  .mobile\:mb-\[32px\] {
-    margin-bottom: 32px;
-  }
-
   .mobile\:mb-\[4px\] {
     margin-bottom: 4px;
   }
@@ -1355,10 +1333,6 @@ video {
 
   .tablet\:mb-\[16px\] {
     margin-bottom: 16px;
-  }
-
-  .tablet\:mb-\[55px\] {
-    margin-bottom: 55px;
   }
 
   .tablet\:mb-\[8px\] {
@@ -1457,10 +1431,6 @@ video {
     margin-bottom: 24px;
   }
 
-  .desktop\:mb-\[71\.78px\] {
-    margin-bottom: 71.78px;
-  }
-
   .desktop\:ml-\[30px\] {
     margin-left: 30px;
   }
@@ -1544,7 +1514,6 @@ video {
     line-height: 160%,;
   }
 }
-
 
 
 

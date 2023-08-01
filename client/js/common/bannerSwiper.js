@@ -30,28 +30,31 @@ const bannerData = {
   ],
 };
 
-
 const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
+  initialSlide: 0,
+  spaceBetween: 0,
   pagination: {
-    el:'#swiper .pagination',
+    el:'.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '#swiper .swiper-button-next',
-    prevEl: '#swiper .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   fadeEffect: {
           crossFade: true,
   },
   loop: true,
+
   autoplay: {
           delay: 3500,
           disableOnInteraction: false,
     crossFade: true,
   },
-  speed: 3.5, // 트랜지션 속도를 0ms로 설정
 });
+
+
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
@@ -63,33 +66,36 @@ const firstSwiper = new Swiper('#first-swiper', {
   },
 });
 
-const secondSwiper = new Swiper('#second-swiper', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  // Navigation arrows
-  navigation: {
-    nextEl: '#swiper-button-next-second',
-    prevEl: '#swiper-button-prev-second',
-  },
-});
 
-const thirdswiper = new Swiper('#third-swiper', {
-  slidesPerView: 12,
-  spaceBetween: 30,
-  navigation: {
-    prevEl: '#swiper-button-prev-third',
-    nextEl: '#swiper-button-next-third',
-  },
-});
+// const secondSwiper = new Swiper('#second-swiper', {
+//   slidesPerView: 4,
+//   spaceBetween: 10,
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '#swiper-button-next-second',
+//     prevEl: '#swiper-button-prev-second',
+//   },
+// });
 
-const fourthswiper = new Swiper('#fourth-swiper', {
-  slidesPerView: 6,
-  spaceBetween: 30,
-  navigation: {
-    prevEl: '#swiper-button-prev-fourth',
-    nextEl: '#swiper-button-next-fourth',
-  },
-})
+// const thirdswiper = new Swiper('#third-swiper', {
+//   slidesPerView: 12,
+//   spaceBetween: 30,
+//   navigation: {
+//     prevEl: '#swiper-button-prev-third',
+//     nextEl: '#swiper-button-next-third',
+//   },
+// });
+
+// const fourthswiper = new Swiper('#fourth-swiper', {
+//   slidesPerView: 6,
+//   spaceBetween: 30,
+//   navigation: {
+//     prevEl: '#swiper-button-prev-fourth',
+//     nextEl: '#swiper-button-next-fourth',
+//   },
+// });
+
+
 
 
 //배너 영역  html 템플릿 생성 
@@ -107,7 +113,7 @@ function getBannerImage(src, alt, text) {
 // 배너 이미지, 텍스트 랜더링하는 함수
 async function renderBanner(){
   const bannerContainer = getNode('#swiper .swiper-wrapper');
-  const pauseBtn = getNode('.btnPause');
+  const pauseBtn = getNode('.bannerBtnPause');
   
   pauseBtn.addEventListener('click', handlePlay);
   
@@ -117,13 +123,11 @@ async function renderBanner(){
 
   clearContents(bannerContainer);
 
-  bannerData.banner.forEach((item, index) => {
+  bannerData.banner.forEach((item) => {
     const bannerHTML = getBannerImage(item.src, item.alt, item.text);
 
     insertLast(bannerContainer, bannerHTML);
-    if(index ===0){
-      pauseBtn.classList.add('.play');
-    }
+   
       
   });
 }
