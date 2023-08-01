@@ -45,7 +45,7 @@
     @apply h-[855px] w-[1920px]
   }
 
-  .btnPause{
+ .btnPause{
     left : 4.375rem;
     bottom: 10.7055rem;
     width: 18px;
@@ -56,6 +56,27 @@
     top : 50px;
     left : 70px;
   }
+
+
+  .navigation{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    display: flex;
+    gap:1rem;
+    z-index: 10;
+    align-items: center;
+  }
+
+  .navigation .play{
+    cursor: pointer;
+  }
+  .pagination{
+    display: flex;
+    gap:1rem
+    top: 60px;
+  }
+
 
 
 }

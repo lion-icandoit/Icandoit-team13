@@ -587,10 +587,6 @@ video {
   display: none;
 }
 
-.h-\[18px\] {
-  height: 18px;
-}
-
 .h-\[34px\] {
   height: 34px;
 }
@@ -621,10 +617,6 @@ video {
 
 .w-\[132px\] {
   width: 132px;
-}
-
-.w-\[18px\] {
-  width: 18px;
 }
 
 .w-\[1920px\] {
@@ -661,10 +653,6 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
-}
-
-.bg-\[url\(\'\.\/\.\.\/assets\/images\/Pause\.svg\'\)\] {
-  background-image: url('./../assets/images/Pause.svg');
 }
 
 .bg-\[url\(\'\.\/\.\.\/assets\/images\/glass-icon\.svg\'\)\] {
@@ -847,6 +835,26 @@ video {
 .btnPause img{
   top : 50px;
   left : 70px;
+}
+
+.navigation{
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  display: flex;
+  gap:1rem;
+  z-index: 10;
+  align-items: center;
+}
+
+.navigation .play{
+  cursor: pointer;
+}
+
+.pagination{
+  display: flex;
+  gap:1rem
+  /* position: absolute; */
 }
 
 .hover\:opacity-100:hover {
