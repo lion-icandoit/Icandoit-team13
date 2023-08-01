@@ -5,13 +5,20 @@ module.exports = {
   content: ["./client/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
+      backgroundImage: {
         "checkbox-default": "url('../images/check-default.svg')",
         "checkbox-checked": "url('../images/check-checked.svg')",
         "checkbox-agree": "url('../images/icon-agree-check.svg')",
         "checkbox-agree-red": "url('../images/icon-agree-check-red.svg')",
         "checkbox-password": "url('../images/icon-password.svg')"
-      }),
+      },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+      },
       colors: {
         '--black': '#000000',
         '--white': '#ffffff',
@@ -43,6 +50,7 @@ module.exports = {
         '--heading-xl': ['28.43px', '140%,', '700'],
         '--heading-xxl': ['37.9px', '140%,', '700'],
         '--heading-xxxl': ['50.52px', '140%,', '700'],
+        '--font-xl' : ['45px', '160%', '700'],
         '--label-small':['12px', '150%,', '600'],
         '--label-medium': ['16px', '150%,', '600'],
         '--label-large': ['21.33px', '150%,', '600'],
