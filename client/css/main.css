@@ -919,6 +919,29 @@ video {
 .swiperOnlyBtn {
   height: 100%;
   width: 100%;
+
+.content-list {
+  width: 180px;
+  height: 258.75;
+  margin-left: 70px;
+  transform: scale(1.0);
+  /* 이미지 확대 */
+  transition: transform .5s;
+  /* 시간 설정 */
+}
+
+.content-list:hover {
+  /* hover 시 애니메이션 */
+  transform: scale(1.2);
+  /* 이미지 확대 */
+  transition: transform .5s;
+  /* 시간 설정 */
+
+.bannerBtnPause{
+  left : 4.375rem;
+  bottom: 10.7055rem;
+  width: 18px;
+  height : 18px;
 }
 
 .swiper-slide {
@@ -1033,6 +1056,10 @@ video {
   .content__item {
     min-width: 11.25rem;
   }
+.bannerBtnPause img{
+  top : 50px;
+  left : 70px;
+
 }
 
 .favorite {
@@ -1363,6 +1390,41 @@ video {
   left : 70px;
 }
 
+.slide-list {
+  width: 260.54px;
+  height: 175.35px;
+  margin: 0 70px 0;
+  transform: scale(1.0);
+  /* 이미지 확대 */
+  transition: transform .5s;
+  /* 시간 설정 */
+}
+
+.slide-list:hover {
+  transform: scale(1.2);
+  /* 이미지 확대 */
+  transition: transform .5s;
+  /* 시간 설정 */
+}
+
+.contents__title {
+  color: #ffffff;
+  font-size: 28.43px;
+  font-weight: 700;
+  margin: 0 0.75rem 0 5rem;
+  margin-bottom: 0.75rem;
+}
+
+.content__info {
+  color:#c4c4c4;
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 70px;
+}
+
 .hover\:-translate-y-\[10px\]:hover {
   --tw-translate-y: -10px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1647,6 +1709,7 @@ video {
     font-size: 21.33px;
     line-height: 160%,;
   }
+
 }
 
 

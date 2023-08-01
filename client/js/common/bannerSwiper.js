@@ -89,7 +89,7 @@ const swiper = new Swiper('#swiper', {
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
-  spaceBetween: 5,
+  spaceBetween: 1,
   // Navigation arrows
   navigation: {
     nextEl: '#swiper-button-next-first',
