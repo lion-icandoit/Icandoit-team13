@@ -48,3 +48,14 @@ const secondSwiper = new Swiper('#second-swiper', {
     prevEl: '#swiper-button-prev-second',
   },
 });
+
+const thirdSwiper = new Swiper('#third-swiper', {
+  slidesPerView: 8,
+  spaceBetween: 10,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-third',
+    prevEl: '#swiper-button-prev-third',
+  },
+});
+
