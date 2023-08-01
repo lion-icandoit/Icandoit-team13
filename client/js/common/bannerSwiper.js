@@ -1,4 +1,5 @@
 //swiper 기능 구현
+/*
 const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
   centeredSlides: true,
@@ -22,12 +23,7 @@ const swiper = new Swiper('#swiper', {
   },
   speed: 3.5, // 트랜지션 속도를 0ms로 설정
 });
-
-let swiperOnly = new Swiper('.mySwiper', {
-  slidesPerView: 6,
-  // spaceBetween: 15,
-  freeMode: true,
-});
+*/
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
@@ -49,13 +45,45 @@ const secondSwiper = new Swiper('#second-swiper', {
   },
 });
 
-const thirdSwiper = new Swiper('#third-swiper', {
+
+
+
+
+/*
+const thirdswiper = new Swiper('.thirdSwiper', {
   slidesPerView: 8,
-  spaceBetween: 10,
-  // Navigation arrows
+  spaceBetween: 30,
+  centeredSlides: true,
+  pagination: {
+    el: '.third-swiper-pagination',
+    clickable: true,
+  },
   navigation: {
-    nextEl: '#swiper-button-next-third',
-    prevEl: '#swiper-button-prev-third',
+    nextEl: ".swiper-button-next-third",
+    prevEl: ".swiper-button-prev-third",
   },
 });
 
+
+const fourthswiper = new Swiper('.fourthSwiper', {
+  slidesPerView: 6,
+  spaceBetween: 30,
+  centeredSlides: true,
+  pagination: {
+    el: '.fourth-swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-fourth",
+    prevEl: ".swiper-button-prev-fourth",
+  },
+});
+
+*/
+/*
+let swiperOnly = new Swiper('.mySwiper', {
+  slidesPerView: 6,
+  // spaceBetween: 15,
+  freeMode: true,
+});
+*/

@@ -174,7 +174,7 @@
         @apply border backdrop-blur-[30px] border-solid border-[#A6A6A6] right-[4.375rem] top-[37.625rem];
     }
     .swiper-button-next::after,
- .swiper-button-prev::after {
+    .swiper-button-prev::after {
         @apply text-[#898989];
     }
     .swiper-pagination{
@@ -196,10 +196,14 @@
     }
     .swiper-slide-contents{
         @apply h-[855px] w-[1920px]
-  
+
     }
     .btnPause{
         @apply left-[4.375rem] bottom-[10.7055rem];
+    }
+    img {
+/*         max-width: initial !important;
+        width: 100% !important; */
     }
 }
 
