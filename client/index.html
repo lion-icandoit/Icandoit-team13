@@ -26,7 +26,7 @@
     <title>TAING</title>
   </head>
 
-  <body class="-bg--black -font--font-family">
+  <body class=" -bg--gray-700 -font--font-family">
     <!-- 헤더영역 nav -->
     <header class="header fixed z-20 flex w-[1920px] px-[70px] py-[29px]">
       <h1 class="mr-[52px] inline-block">
@@ -86,7 +86,10 @@
 
     <section class="banner relative z-10 h-[855px]">
       <div class="swiper" id="swiper">
-        <div class="swiper-wrapper relative"></div>
+        <div class="swiper-wrapper h-[855px] relative">
+          <!-- 배너 이미지 랜더링 부분 -->
+          </div>
+        </div>
         <!--buttons -->
         <button
           type="button"
@@ -102,32 +105,34 @@
         ></button>
 
         <!--pagination -->
-        <div class="navigation relative z-10">
-          <div>
-            <button type="button" class="bannerbtnPause play absolute z-10">
-              <img src="./assets/images/Pause.svg" alt="슬라이드 정지 버튼" />
-            </button>
-            <div class="swiper-pagination absolute flex">
-              <span
-                class="swiper-pagination-bullet"
-                aria-label="Go to slide 1"
-              ></span>
-              <span
-                class="swiper-pagination-bullet"
-                aria-label="Go to slide 2"
-              ></span>
-              <span
-                class="swiper-pagination-bullet"
-                aria-label="Go to slide 3"
-              ></span>
-              <span
-                class="swiper-pagination-bullet"
-                aria-label="Go to slide 4"
-              ></span>
-            </div>
+        <div class="navigation flex relative z-10">
+        <div>
+          <button type="button" class="bannerBtnPause play absolute z-10">
+            <img src="./assets/images/Pause.svg" alt="슬라이드 정지 버튼" />
+          </button>
+          <div class="swiper-pagination absolute flex">
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 1"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 2"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 3"
+            ></span>
+            <span
+              class="swiper-pagination-bullet"
+              aria-label="Go to slide 4"
+            ></span>
           </div>
+      
+
         </div>
-      </div>
+        </div>
+    
       <a
         href="#"
         class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
@@ -177,7 +182,7 @@
         </div>
         <div class="swiper-button-prev" id="swiper-button-prev-first"></div>
         <div class="swiper-button-next" id="swiper-button-next-first"></div>
-      </div>
+      </div> 
       <h3 class="-text--white">Quick Vod</h3>
       <div class="swiper" id="second-swiper">
         <div class="swiper-wrapper">
@@ -302,8 +307,8 @@
           <div class="swiper-slide program__item">
             <a href="/" class="program__link">
               <img
-                src="/assets/images/program/program_6.svg"
-                alt="SHOW ME THE MONEY 포스터"
+                src="/assets/images/program/program_9.jpg"
+                alt="우리들의 블루스"
                 class="program__img"
               />
               <div class="program__infoWrapper">
@@ -312,7 +317,7 @@
                   alt="6위"
                   class="program__rank"
                 />
-                <span class="program__info">SHOW ME THE MONEY</span>
+                <span class="program__info">우라들의 블루스</span>
               </div>
             </a>
           </div>

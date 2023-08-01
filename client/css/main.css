@@ -558,6 +558,10 @@ video {
   margin: 0px;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mr-\[10px\] {
   margin-right: 10px;
 }
@@ -909,26 +913,16 @@ video {
   width: 1920px;
 }
 
-/* only */
-
-.btnPause {
+.bannerBtnPause{
+  left : 4.375rem;
   bottom: 10.7055rem;
-  left: 4.375rem;
+  width: 18px;
+  height : 18px;
 }
 
-.swiperOnlyBtn {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  background: #000;
+.bannerBtnPause img{
+  top : 50px;
+  left : 70px;
 }
 
 .favorite {
@@ -1523,3 +1517,6 @@ video {
     line-height: 160%,;
   }
 }
+
+
+

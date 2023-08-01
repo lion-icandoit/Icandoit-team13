@@ -323,3 +323,21 @@
     background: #000;
   }
 }
+  
+  .bannerBtnPause{
+    left : 4.375rem;
+    bottom: 10.7055rem;
+    width: 18px;
+    height : 18px;
+  }
+
+  .bannerBtnPause img{
+    top : 50px;
+    left : 70px;
+  }
+
+
+
+
+
+
