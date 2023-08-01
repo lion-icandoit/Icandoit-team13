@@ -22,7 +22,8 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <script src="./js/common/bannerSwiper.js" type="module"></script>
     <title>TAING</title>
   </head>
 
@@ -85,40 +86,46 @@
     <!-- 배너 swiper 영역 -->
 
     <section class="banner relative z-10 h-[855px]">
-      <div class="swiper-container" id="swiper">
-        <div class="swiper-wrapper bannerInner relative"></div>
+      <div class="swiper" id="swiper">
+        <div class="swiper-wrapper relative"></div>
+        <!--buttons -->
+        <button
+          type="button"
+          class="swiper-button-prev opacity-50 hover:opacity-100"
+          aria-label="이전"
+          id="btnPrev"
+        ></button>
+        <button
+          type="button"
+          class="swiper-button-next opacity-50 hover:opacity-100"
+          aria-label="다음"
+          id="btnNext"
+        ></button>
 
         <!--pagination -->
-        <div class="relative z-10">
-          <!-- <button
-            class="btnPause absolute z-10 h-[18px] w-[18px] bg-[url('./../assets/images/Pause.svg')] bg-auto bg-no-repeat"
-            type="button"
-            id="btnPause"
-          ></button> -->
-          <button type="button" class="btnPause absolute z-10">
-            <img
-              src="./assets/images/Pause.svg"
-              class="btn__pause"
-              alt="멈춤"
-            />
-          </button>
-          <div class="swiper-pagination absolute flex">
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 1"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 2"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 3"
-            ></span>
-            <span
-              class="swiper-pagination-bullet"
-              aria-label="Go to slide 4"
-            ></span>
+        <div class="navigation relative z-10">
+          <div>
+            <button type="button" class="btnPause play absolute z-10">
+              <img src="./assets/images/Pause.svg" alt="슬라이드 정지 버튼" />
+            </button>
+            <div class="swiper-pagination absolute flex">
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 1"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 2"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 3"
+              ></span>
+              <span
+                class="swiper-pagination-bullet"
+                aria-label="Go to slide 4"
+              ></span>
+            </div>
           </div>
         </div>
       </div>
@@ -127,20 +134,6 @@
         class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
         >자세히 보기</a
       >
-
-      <!--buttons -->
-      <button
-        type="button"
-        class="swiper-button-prev opacity-50 hover:opacity-100"
-        aria-label="이전"
-        id="btnPrev"
-      ></button>
-      <button
-        type="button"
-        class="swiper-button-next opacity-50 hover:opacity-100"
-        aria-label="다음"
-        id="btnNext"
-      ></button>
     </section>
   </body>
 </html>
