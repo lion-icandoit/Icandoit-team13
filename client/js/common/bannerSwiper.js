@@ -33,7 +33,6 @@ const bannerData = {
 
 const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
-  autoplay: true,
   pagination: {
     el:'#swiper .pagination',
     clickable: true,
@@ -49,6 +48,46 @@ const swiper = new Swiper('#swiper', {
   autoplay: {
           delay: 3500,
           disableOnInteraction: false,
+    crossFade: true,
+  },
+  speed: 3.5, // 트랜지션 속도를 0ms로 설정
+});
+
+const firstSwiper = new Swiper('#first-swiper', {
+  slidesPerView: 6,
+  spaceBetween: 5,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-first',
+    prevEl: '#swiper-button-prev-first',
+  },
+});
+
+const secondSwiper = new Swiper('#second-swiper', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-second',
+    prevEl: '#swiper-button-prev-second',
+  },
+});
+
+const thirdswiper = new Swiper('#third-swiper', {
+  slidesPerView: 12,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: '#swiper-button-prev-third',
+    nextEl: '#swiper-button-next-third',
+  },
+});
+
+const fourthswiper = new Swiper('#fourth-swiper', {
+  slidesPerView: 6,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: '#swiper-button-prev-fourth',
+    nextEl: '#swiper-button-next-fourth',
   },
 })
 
