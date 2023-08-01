@@ -1,9 +1,40 @@
 /* global Swiper */
 
-import { getNode } from "../../lib//dom/getNode.js"
+import { getNode } from '../../lib//dom/getNode.js';
 import { clearContents } from '../../lib/dom/clearContents.js';
 import { insertLast } from '../../lib/dom/insert.js';
 
+export var swiperOnlyBtn = new Swiper('.mySwiperOnlyBtn', {
+  slidesPerView: 6,
+  loop: true,
+  loopAdditionalSlides: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+var swiperEventBtn = new Swiper('.swiper', {
+  slidesPerView: 6,
+  direction: getDirection(),
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+  return direction;
+}
 
 const bannerData = {
   banner: [
@@ -30,28 +61,31 @@ const bannerData = {
   ],
 };
 
-
 const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
+  initialSlide: 0,
+  spaceBetween: 0,
   pagination: {
-    el:'#swiper .pagination',
+    el:'.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '#swiper .swiper-button-next',
-    prevEl: '#swiper .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   fadeEffect: {
-          crossFade: true,
-  },
-  loop: true,
-  autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
     crossFade: true,
   },
-  speed: 3.5, // 트랜지션 속도를 0ms로 설정
+  loop: true,
+
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+    crossFade: true,
+  },
 });
+
+
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
@@ -62,6 +96,7 @@ const firstSwiper = new Swiper('#first-swiper', {
     prevEl: '#swiper-button-prev-first',
   },
 });
+
 
 const secondSwiper = new Swiper('#second-swiper', {
   slidesPerView: 5,
@@ -74,27 +109,26 @@ const secondSwiper = new Swiper('#second-swiper', {
 });
 
 const thirdswiper = new Swiper('#third-swiper', {
-  slidesPerView: 12,
-  spaceBetween: 30,
+  slidesPerView: 5,
+  spaceBetween: 10,
   navigation: {
-    prevEl: '#swiper-button-prev-third',
-    nextEl: '#swiper-button-next-third',
+    prevEl: '#swiper-button-prev',
+    nextEl: '#swiper-button-next',
   },
+  loop : true
 });
 
 const fourthswiper = new Swiper('#fourth-swiper', {
   slidesPerView: 6,
   spaceBetween: 30,
   navigation: {
-    prevEl: '#swiper-button-prev-fourth',
-    nextEl: '#swiper-button-next-fourth',
+    prevEl: '#swiper-button-prev',
+    nextEl: '#swiper-button-next',
   },
-})
+});
 
-
-//배너 영역  html 템플릿 생성 
+//배너 영역  html 템플릿 생성
 function getBannerImage(src, alt, text) {
- 
   const template = /*html*/ `
     <div class="swiper-slide swiper-slide-contents">
       <img src="${src}" alt="${alt}" />
@@ -105,54 +139,49 @@ function getBannerImage(src, alt, text) {
 }
 
 // 배너 이미지, 텍스트 랜더링하는 함수
-async function renderBanner(){
+async function renderBanner() {
   const bannerContainer = getNode('#swiper .swiper-wrapper');
-  const pauseBtn = getNode('.btnPause');
+  const pauseBtn = getNode('.bannerBtnPause');
   
   pauseBtn.addEventListener('click', handlePlay);
-  
-  const response = await fetch('http://localhost:3000/bannerData')
-  const data = await response.json()
+
+  const response = await fetch('http://localhost:3000/bannerData');
+  const data = await response.json();
   console.log(data);
 
   clearContents(bannerContainer);
 
-  bannerData.banner.forEach((item, index) => {
+  bannerData.banner.forEach((item) => {
     const bannerHTML = getBannerImage(item.src, item.alt, item.text);
 
     insertLast(bannerContainer, bannerHTML);
-    if(index ===0){
-      pauseBtn.classList.add('.play');
-    }
+   
       
   });
 }
- 
-  renderBanner();
 
+renderBanner();
 
-  const playButton = getNode('.play');
-  
-  function handlePlay(){
-  let toggle = false
-    
-  return ()=>{
+const playButton = getNode('.play');
+
+function handlePlay() {
+  let toggle = false;
+
+  return () => {
     const img = playButton.querySelector('img');
 
-    if(!toggle){
+    if (!toggle) {
       swiper.autoplay.stop();
-      img.src = './assets/images/Pause.svg'
-      img.alt = '슬라이드 정지 버튼'
-
-    }else{
+      img.src = './assets/images/Pause.svg';
+      img.alt = '슬라이드 정지 버튼';
+    } else {
       swiper.autoplay.start();
-      img.src = './assets/images/Play.svg'
-      img.alt = '슬라이드 재생 버튼'
+      img.src = './assets/images/Play.svg';
+      img.alt = '슬라이드 재생 버튼';
     }
-    
-    toggle = !toggle
-  }
+
+    toggle = !toggle;
+  };
 }
 
-playButton.addEventListener('click',handlePlay())
-
+playButton.addEventListener('click', handlePlay());
