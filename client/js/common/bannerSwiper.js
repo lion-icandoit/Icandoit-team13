@@ -1,6 +1,5 @@
 /* global Swiper */
 //swiper 기능 구현
-/* global Swiper */
 
 const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
