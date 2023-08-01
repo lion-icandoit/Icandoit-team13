@@ -355,4 +355,9 @@
     background: #000;
   }
  
+ .swiper-button-prev-fourth,
+ .swiper-button-next-fourth{
+    height : 50px;
+ }
+
 }
