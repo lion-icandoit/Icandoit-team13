@@ -98,33 +98,16 @@ const firstSwiper = new Swiper('#first-swiper', {
 });
 
 
-// const secondSwiper = new Swiper('#second-swiper', {
-//   slidesPerView: 4,
-//   spaceBetween: 10,
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '#swiper-button-next-second',
-//     prevEl: '#swiper-button-prev-second',
-//   },
-// });
+const secondSwiper = new Swiper('#second-swiper', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-second',
+    prevEl: '#swiper-button-prev-second',
+  },
+});
 
-// const thirdswiper = new Swiper('#third-swiper', {
-//   slidesPerView: 12,
-//   spaceBetween: 30,
-//   navigation: {
-//     prevEl: '#swiper-button-prev-third',
-//     nextEl: '#swiper-button-next-third',
-//   },
-// });
-
-// const fourthswiper = new Swiper('#fourth-swiper', {
-//   slidesPerView: 6,
-//   spaceBetween: 30,
-//   navigation: {
-//     prevEl: '#swiper-button-prev-fourth',
-//     nextEl: '#swiper-button-next-fourth',
-//   },
-// });
 
 const thirdswiper = new Swiper('#third-swiper', {
   slidesPerView: 5,
@@ -143,6 +126,7 @@ const fourthswiper = new Swiper('#fourth-swiper', {
     prevEl: '#swiper-button-prev',
     nextEl: '#swiper-button-next',
   },
+ 
 });
 
 //배너 영역  html 템플릿 생성
