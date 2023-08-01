@@ -586,10 +586,6 @@ video {
   display: none;
 }
 
-.h-\[18px\] {
-  height: 18px;
-}
-
 .h-\[34px\] {
   height: 34px;
 }
@@ -628,10 +624,6 @@ video {
 
 .w-\[132px\] {
   width: 132px;
-}
-
-.w-\[18px\] {
-  width: 18px;
 }
 
 .w-\[1920px\] {
