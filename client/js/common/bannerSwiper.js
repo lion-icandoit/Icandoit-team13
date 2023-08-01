@@ -89,7 +89,7 @@ const swiper = new Swiper('#swiper', {
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
-  spaceBetween: 5,
+  spaceBetween: 1,
   // Navigation arrows
   navigation: {
     nextEl: '#swiper-button-next-first',
@@ -98,10 +98,10 @@ const firstSwiper = new Swiper('#first-swiper', {
 });
 
 
-const secondSwiper = new Swiper('#second-swiper', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  // Navigation arrows
+ const secondSwiper = new Swiper('#second-swiper', {
+ slidesPerView: 4,
+ spaceBetween: 10,
+ // Navigation arrows
   navigation: {
     nextEl: '#swiper-button-next-second',
     prevEl: '#swiper-button-prev-second',
