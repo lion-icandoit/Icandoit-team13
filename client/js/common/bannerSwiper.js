@@ -104,20 +104,21 @@ const secondSwiper = new Swiper('#second-swiper', {
 });
 
 const thirdswiper = new Swiper('#third-swiper', {
-  slidesPerView: 12,
-  spaceBetween: 30,
+  slidesPerView: 5,
+  spaceBetween: 10,
   navigation: {
-    prevEl: '#swiper-button-prev-third',
-    nextEl: '#swiper-button-next-third',
+    prevEl: '#swiper-button-prev',
+    nextEl: '#swiper-button-next',
   },
+  loop : true
 });
 
 const fourthswiper = new Swiper('#fourth-swiper', {
   slidesPerView: 6,
   spaceBetween: 30,
   navigation: {
-    prevEl: '#swiper-button-prev-fourth',
-    nextEl: '#swiper-button-next-fourth',
+    prevEl: '#swiper-button-prev',
+    nextEl: '#swiper-button-next',
   },
 });
 
