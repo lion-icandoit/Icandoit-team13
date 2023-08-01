@@ -1,10 +1,8 @@
 /* global Swiper */
 
-import { getNode } from '../../lib/dom/getNode.js';
+import { getNode } from "../../lib//dom/getNode.js"
 import { clearContents } from '../../lib/dom/clearContents.js';
 import { insertLast } from '../../lib/dom/insert.js';
-// import { insertLast, getNode, attr} from '../../lib/dom/index.js';
-
 
 
 const bannerData = {
@@ -33,50 +31,30 @@ const bannerData = {
 };
 
 
-let swiper;
-export function bannerSwiper() {
-  const swiper = new Swiper('#swiper', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: 0,
-    initialSlide: 0,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    loopAdditionalSlides: 1,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    fadeEffect: {
-      crossFade: true,
-    },
-    breakpoints: { //반응형 조건 속성
-      320: { //320 이상일 경우
-        slidesPerView: 1, 
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      1200: {
-        slidesPerView: 1,
-      },
-    },
-    speed: 3.5, 
-  
-  });
-  return swiper;
-}
+const swiper = new Swiper('#swiper', {
+  slidesPerView: 'auto',
+  autoplay: true,
+  pagination: {
+    el:'#swiper .pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '#swiper .swiper-button-next',
+    prevEl: '#swiper .swiper-button-prev',
+  },
+  fadeEffect: {
+          crossFade: true,
+  },
+  loop: true,
+  autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+  },
+})
 
 
 //배너 영역  html 템플릿 생성 
-export  function getBannerImage(src, alt, text) {
+function getBannerImage(src, alt, text) {
  
   const template = /*html*/ `
     <div class="swiper-slide swiper-slide-contents">
@@ -88,12 +66,11 @@ export  function getBannerImage(src, alt, text) {
 }
 
 // 배너 이미지, 텍스트 랜더링하는 함수
-export async function renderBanner() {
+async function renderBanner(){
   const bannerContainer = getNode('#swiper .swiper-wrapper');
-  const pauseBtnImage = getNode('.btn__pause');
   const pauseBtn = getNode('.btnPause');
   
-  pauseBtn.addEventListener('click', toggleAutoPlay);
+  pauseBtn.addEventListener('click', handlePlay);
   
   const response = await fetch('http://localhost:3000/bannerData')
   const data = await response.json()
@@ -101,33 +78,42 @@ export async function renderBanner() {
 
   clearContents(bannerContainer);
 
-  bannerData.banner.forEach((item) => {
+  bannerData.banner.forEach((item, index) => {
     const bannerHTML = getBannerImage(item.src, item.alt, item.text);
 
     insertLast(bannerContainer, bannerHTML);
+    if(index ===0){
+      pauseBtn.classList.add('.play');
+    }
+      
   });
-
-  swiper = bannerSwiper();
-
-
-
-  function toggleAutoPlay(){
-    const pauseBtn = getNode('.btnPause');
-    if(swiper.autoplay.running){
-      swiper.autoplay.stop();
-      pauseBtn.setAttribute('aria-label', '재생');
-      pauseBtn.style.backgroundImage ="url('./assets/images/Pause.svg')";
-      clearContents(pauseBtnImage);
-    } else {
-          swiper.autoplay.start();
-          pauseBtn.setAttribute('aria-label', '정지');
-          // clearContents(pauseBtnImage);
-          pauseBtn.style.backgroundImage ="url('./assets/images/Play.svg')";
-        }
-    
-  }
-
 }
-renderBanner();
+ 
+  renderBanner();
 
+
+  const playButton = getNode('.play');
+  
+  function handlePlay(){
+  let toggle = false
+    
+  return ()=>{
+    const img = playButton.querySelector('img');
+
+    if(!toggle){
+      swiper.autoplay.stop();
+      img.src = './assets/images/Pause.svg'
+      img.alt = '슬라이드 정지 버튼'
+
+    }else{
+      swiper.autoplay.start();
+      img.src = './assets/images/Play.svg'
+      img.alt = '슬라이드 재생 버튼'
+    }
+    
+    toggle = !toggle
+  }
+}
+
+playButton.addEventListener('click',handlePlay())
 
