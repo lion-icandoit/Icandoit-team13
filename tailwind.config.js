@@ -1,8 +1,11 @@
 /* 커스텀 추가 작업*/
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = { 
+
   content: ["./client/**/*.{html,js}"],
+
+
   theme: {
     extend: {
       backgroundImage: {
