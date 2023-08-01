@@ -89,7 +89,7 @@ const swiper = new Swiper('#swiper', {
 
 const firstSwiper = new Swiper('#first-swiper', {
   slidesPerView: 6,
-  spaceBetween: 5,
+  spaceBetween: 1,
   // Navigation arrows
   navigation: {
     nextEl: '#swiper-button-next-first',
@@ -98,33 +98,15 @@ const firstSwiper = new Swiper('#first-swiper', {
 });
 
 
-// const secondSwiper = new Swiper('#second-swiper', {
-//   slidesPerView: 4,
-//   spaceBetween: 10,
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '#swiper-button-next-second',
-//     prevEl: '#swiper-button-prev-second',
-//   },
-// });
-
-// const thirdswiper = new Swiper('#third-swiper', {
-//   slidesPerView: 12,
-//   spaceBetween: 30,
-//   navigation: {
-//     prevEl: '#swiper-button-prev-third',
-//     nextEl: '#swiper-button-next-third',
-//   },
-// });
-
-// const fourthswiper = new Swiper('#fourth-swiper', {
-//   slidesPerView: 6,
-//   spaceBetween: 30,
-//   navigation: {
-//     prevEl: '#swiper-button-prev-fourth',
-//     nextEl: '#swiper-button-next-fourth',
-//   },
-// });
+const secondSwiper = new Swiper('#second-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 1,
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-button-next-second',
+    prevEl: '#swiper-button-prev-second',
+  },
+});
 
 const thirdswiper = new Swiper('#third-swiper', {
   slidesPerView: 5,
