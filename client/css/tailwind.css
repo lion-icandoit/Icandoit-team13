@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 .favorite {
   background: #000000;
   color: #ffffff;
@@ -313,6 +310,19 @@
   .swiper-slide-contents {
     @apply h-[855px] w-[1920px];
   }
+
+  /* only */
+  .btnPause {
+    @apply bottom-[10.7055rem] left-[4.375rem];
+  }
+  .swiperOnlyBtn {
+    @apply h-full w-full;
+  }
+  .swiper-slide {
+    @apply flex items-center justify-center text-center text-lg;
+    background: #000;
+  }
+}
   
   .bannerBtnPause{
     left : 4.375rem;
