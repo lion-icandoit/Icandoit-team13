@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 .favorite {
   background: #000000;
   color: #ffffff;
@@ -311,53 +314,7 @@
     @apply h-[855px] w-[1920px];
   }
 
- 
- 
-.btnPause{
-    left : 4.375rem;
-    bottom: 10.7055rem;
-    width: 18px;
-    height : 18px;
-  }
-
-  .btnPause img{
-    top : 50px;
-    left : 70px;
-  }
 
 
-  .navigation{
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
-    display: flex;
-    gap:1rem;
-    z-index: 10;
-    align-items: center;
-  }
 
 
-  .navigation .play{
-    cursor: pointer;
-  }
-  .pagination{
-    display: flex;
-    gap:1rem
-    top: 60px;
-  .btnPause {
-    @apply bottom-[10.7055rem] left-[4.375rem];
-  }
-  .swiperOnlyBtn {
-    @apply h-full w-full;
-  }
-  .swiper-slide {
-    @apply flex items-center justify-center text-center text-lg;
-    background: #000;
-  }
- 
- .swiper-button-prev-fourth,
- .swiper-button-next-fourth{
-    height : 50px;
- }
-
-}
