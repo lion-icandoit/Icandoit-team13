@@ -24,7 +24,27 @@ export const swiper = new Swiper('#swiper', {
 });
 
 export let swiperOnly = new Swiper('.mySwiper', {
-  slidesPerView: 6,
-  // spaceBetween: 15,
-  freeMode: true,
+  slidesPerView: 4,
+  // freeMode: false,
 });
+
+// export let swiperOnlyBtn = new Swiper('.swiper', {
+//   slidesPerView: 6,
+//   direction: getDirection(),
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   on: {
+//     resize: function () {
+//       swiper.changeDirection(getDirection());
+//     },
+//   },
+// });
+
+// function getDirection() {
+//   var windowWidth = window.innerWidth;
+//   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+//   return direction;
+// }

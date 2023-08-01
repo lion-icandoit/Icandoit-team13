@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family:
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 760px) {
+        .swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button
+      class="transform rounded-lg bg-indigo-600 px-4 py-2 font-bold text-white transition duration-500 ease-in-out hover:rotate-180"
+    >
+      Rotate Me 180°
+    </button>
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster01.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster02.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster03.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster04.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster05.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster06.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img
+            class="block w-full object-contain"
+            src="./assets/images/only/only-poster07.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 6,
+        direction: getDirection(),
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+      }
+    </script>
+  </body>
+</html>
