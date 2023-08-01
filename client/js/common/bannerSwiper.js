@@ -1,3 +1,4 @@
+/* global Swiper */
 //swiper 기능 구현
 export const swiper = new Swiper('#swiper', {
   slidesPerView: 'auto',
@@ -23,28 +24,12 @@ export const swiper = new Swiper('#swiper', {
   speed: 3.5, // 트랜지션 속도를 0ms로 설정
 });
 
-export let swiperOnly = new Swiper('.mySwiper', {
-  slidesPerView: 4,
-  // freeMode: false,
+export var swiperOnlyBtn = new Swiper('.mySwiperOnlyBtn', {
+  slidesPerView: 6,
+  loop: true,
+  loopAdditionalSlides: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
-
-// export let swiperOnlyBtn = new Swiper('.swiper', {
-//   slidesPerView: 6,
-//   direction: getDirection(),
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   on: {
-//     resize: function () {
-//       swiper.changeDirection(getDirection());
-//     },
-//   },
-// });
-
-// function getDirection() {
-//   var windowWidth = window.innerWidth;
-//   var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-//   return direction;
-// }
