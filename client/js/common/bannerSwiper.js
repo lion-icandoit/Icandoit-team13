@@ -126,7 +126,6 @@ const fourthswiper = new Swiper('#fourth-swiper', {
     prevEl: '#swiper-button-prev',
     nextEl: '#swiper-button-next',
   },
- 
 });
 
 //배너 영역  html 템플릿 생성
