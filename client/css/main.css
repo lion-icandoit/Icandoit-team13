@@ -1,5 +1,6 @@
 /* @import 'tailwindcss/base'; */
 
+
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
@@ -554,6 +555,10 @@ video {
   z-index: 20;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mr-\[10px\] {
   margin-right: 10px;
 }
@@ -927,129 +932,20 @@ video {
   background: #000;
 }
 
-.content-list {
-  width: 180px;
-  height: 258.75;
-  margin-left: 70px;
-  transform: scale(1.0);
-  /* 이미지 확대 */
-  transition: transform .5s;
-  /* 시간 설정 */
+.bannerBtnPause{
+  left : 4.375rem;
+  bottom: 10.7055rem;
+  width: 18px;
+  height : 18px;
 }
 
-.content-list:hover {
-  /* hover 시 애니메이션 */
-  transform: scale(1.2);
-  /* 이미지 확대 */
-  transition: transform .5s;
-  /* 시간 설정 */
-}
-
-.slide-list {
-  width: 260.54px;
-  height: 175.35px;
-  margin: 0 70px 0;
-  transform: scale(1.0);
-  transition: transform .5s;
-}
-
-.content-list {
-  width: 180px;
-  height: 258.75;
-  margin-left: 70px;
-  transform: scale(1.0);
-  transition: transform .5s;
-}
-
-.content-list:hover {
-  transform: scale(1.2);
-  transition: transform .5s;
-}
-
-.slide-list:hover {
-  transform: scale(1.2);
-  transition: transform .5s;
-}
-
-.contents__title {
-  color: #ffffff;
-  font-size: 28.43px;
-  font-weight: 700;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.content__title {
-  color: #ffffff;
-  font-size: 28.43px;
-  font-weight: 700;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.content__info {
-  color:#c4c4c4;
-  font-size: 1.2rem;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 70px;
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .contents__title {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .contents__title {
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .content__title {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content__title {
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .contents__item {
-    flex: 1 0 calc(19.6% - 16px);
-    min-width: 10rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .contents__item {
-    min-width: 11.25rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .content__item {
-    flex: 1 0 calc(19.6% - 16px);
-    min-width: 10rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .content__item {
-    min-width: 11.25rem;
-  }
+.bannerBtnPause img{
+  top : 50px;
+  left : 70px;
 }
 
 .favorite {
+  background: #000000;
   color: #ffffff;
   width: 100%;
   padding-left: 4.375rem;
@@ -1102,16 +998,6 @@ video {
   align-items: stretch;
   gap: 1rem;
   height: 100%;
-}
-
-.program__link:hover {
-  transform: scale(1.1);
-  transition: transform .5s;
-}
-
-.live__link:hover {
-  transform: scale(1.1);
-  transition: transform .5s;
 }
 
 .program__item {
@@ -1363,75 +1249,6 @@ video {
 .live__img {
   border-radius: 0.25rem;
   margin-bottom: 0.75rem;
-}
-
-.slide-list {
-  width: 260.54px;
-  height: 175.35px;
-  margin: 0 70px 0;
-  transform: scale(1.0);
-  /* 이미지 확대 */
-  transition: transform .5s;
-  /* 시간 설정 */
-}
-
-.slide-list:hover {
-  transform: scale(1.2);
-  /* 이미지 확대 */
-  transition: transform .5s;
-  /* 시간 설정 */
-}
-
-/* only */
-
-.btnPause {
-  bottom: 10.7055rem;
-  left: 4.375rem;
-}
-
-.swiperOnlyBtn {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  background: #000;
-}
-
-.bannerBtnPause{
-  left : 4.375rem;
-  bottom: 10.7055rem;
-  width: 18px;
-  height : 18px;
-}
-
-.bannerBtnPause img{
-  top : 50px;
-  left : 70px;
-}
-
-.contents__title {
-  color: #ffffff;
-  font-size: 28.43px;
-  font-weight: 700;
-  margin: 0 0.75rem 0 5rem;
-  margin-bottom: 0.75rem;
-}
-
-.content__info {
-  color:#c4c4c4;
-  font-size: 1.2rem;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 70px;
 }
 
 .hover\:-translate-y-\[10px\]:hover {
@@ -3221,6 +3038,10 @@ video {
     width: 304px;
   }
 
+  .mobile\:w-\[320px\] {
+    width: 320px;
+  }
+
   .mobile\:flex-col {
     flex-direction: column;
   }
@@ -3315,6 +3136,10 @@ video {
 
   .tablet\:w-\[690px\] {
     width: 690px;
+  }
+
+  .tablet\:w-\[768\] {
+    width: 768;
   }
 
   .tablet\:pl-\[40px\] {
