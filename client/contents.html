@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../assets/images/favicon.ico" type="image/ico" />
+    <link
+      rel="shortcut"
+      href="./../assets/images/favicon.ico"
+      type="image/ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/common/bannerSwiper.js" type="module"></script>
+    <style></style>
+    <title>TAING</title>
+  </head>
+
+  <div class="bg--black">
+    <h2 class="text-lg text-white">티빙에서 꼭 봐야하는 콘텐츠</h2>
+    <div class="swiper" id="first-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/contents1.png" alt="보물찾기" />
+          <span class="text-lg text-">보물찾기</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents2.png" alt="러브 캐치" />
+          <span class="text-lg text-">러브캐치</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents3.png" alt="술꾼도시여자들2" />
+          <span class="text-lg">술꾼도시여자들2</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents4.png" alt="털사 킹" />
+          <span class="text-lg text-">털사 킹</span>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/contents5.png"
+            alt="아무것도 하고 싶지 않아"/>
+            <span class="text-lg text-">아무것도 하고...</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents6.png" alt="블랙독" />
+          <span class="text-lg text-">블랙독</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents7.png" alt="우리들의 블루스" />
+          <span class="text-lg text-">우리들을 블루스</span>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/contents8.png" alt="킬라만자로" />
+          <span class="text-lg text-">킬라만자로</span>
+        </div>
+      </div>
+      <div class="swiper-button-prev" id="swiper-button-prev-first"></div>
+      <div class="swiper-button-next" id="swiper-button-next-first"></div>
+    </div>
+    <h3>Quick Vod</h3>
+    <div class="swiper" id="second-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/jtbcNews.png" alt="jtbc" />
+          <span class="text-lg text-">jtbc<p class="text-sm">올해도 최악의 폭염 양상</p></span>
+        </div>
+        <div class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/almangg.png" alt="알맹이" />
+          <span class="text-lg text-">알맹이<p>208화</p></span>
+        </div>
+        <div class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/classs.png" alt="차이나는 클라스" />
+          <span class="text-lg text-">차이나는 클라스<p>254화</p></span>
+        </div>
+        <div class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/lives.png" alt="나는 살기로 했다" />
+          <span class="text-lg text-"><휴먼다큐>나는 살기로...<p>10화</p></span>
+        </div>
+        <div class="swiper-slideonlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/heathy.png" alt="건강면세점" />
+          <span class="text-lg text-">건강면세점<p>130화</p></span>
+        </div>
+        <div class="swiper-slide onlyPoster flex max-h-full w-full items-center justify-end overflow-hidden mobile:mr-[8px] tablet:mr-[8px] desktop:mr-[16px]"
+        >
+          <img src="./assets/images/mommy.png" alt="엄마의 봄날" />
+          <span class="text-lg text-">엄마의 봄날<p>24화</p></span>
+        </div>
+      </div>
+      <div class="swiper-button-prev" id="swiper-button-prev-fourth"></div>
+      <div class="swiper-button-next" id="swiper-button-next-fourth"></div>
+    </div>
+  </body>
+  <script>
+    const firstSwiper = new Swiper('#first-swiper', {
+      slidesPerView: 5,
+      spaceBetween: 1,
+      // Navigation arrows
+      navigation: {
+        nextEl: '#swiper-button-next-first',
+        prevEl: '#swiper-button-prev-first',
+      },
+    });
+    const secondSwiper = new Swiper('#second-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      // Navigation arrows
+      navigation: {
+        nextEl: '#swiper-button-next-second',
+        prevEl: '#swiper-button-prev-second',
+      },
+    });
+  </script>
+</html>

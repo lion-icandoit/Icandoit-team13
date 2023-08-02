@@ -1,84 +1,98 @@
 {
-  "products": [
+  "bannerData": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
-      "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
-      },
-      "stock": 5
+      "src": "./assets/images/main-banner.svg",
+      "alt": "재벌집 막내 아들",
+      "text": "인생 2회차를 사는 판타지 드라마"
     },
     {
-      "id": "product-ekfk",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
-        "alt": "풀무원 탱탱쫄면"
-      },
-      "stock": 10
+      "src": "./assets/images/main-banner1.webp",
+      "alt": "반의반",
+      "text": "정해인의 아련한 짝사랑 로맨스"
     },
     {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
-      "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
-      },
-      "stock": 8
+      "src": "./assets/images/main-banner2.webp",
+      "alt": "경이로운 소문2",
+      "text": "통쾌한 악귀 타파 히어로물"
     },
     {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
-      },
-      "stock": 2
+      "src": "./assets/images/main-banner3.webp",
+      "alt": "킹더랜드",
+      "text": "갑과 을의 7성급 스위트 로맨스!"
+    }
+  ],
+  "favorite": [
+    {
+      "src": "/assets/images/program/program_1.svg",
+      "alt": "재벌집 막내아들",
+      "name": "재벌집 막내아들"
     },
     {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
-      "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
-      },
-      "stock": 13
+      "src": "/assets/images/program/program_2.svg",
+      "alt": "술꾼도시여자들2",
+      "name": "술꾼도시여자들2"
+    },
+    {
+      "src": "/assets/images/program/program_3.svg",
+      "alt": "환혼 : 빛과 그림자",
+      "name": "환혼 : 빛과 그림자"
+    },
+    {
+      "src": "/assets/images/program/program_4.svg",
+      "alt": "캐나다 체크인",
+      "neme": "캐나다 체크인"
+    },
+    {
+      "src": "/assets/images/program/program_5.svg",
+      "alt": "놀라운 토요일",
+      "name": "놀라운 토요일"
+    },
+    {
+      "src": "/assets/images/program/program_6.svg",
+      "alt": "SHOW ME THE MOENY",
+      "name": "쇼미 더 머니"
+    },
+    {
+      "src": "/assets/images/program/program_7.svg",
+      "alt": "러브 캐쳐 인 발리",
+      "name": "러브 캐쳐 인 발리"
+    },
+    {
+      "src": "/assets/images/program/program_8.svg",
+      "alt": "알쓸인잡",
+      "name": "알쓸인잡"
+    }
+  ],
+  "live": [
+    {
+      "src": "/assets/images/live/JTBC.svg",
+      "alt": "JTBC",
+      "name": "JTBC 뉴스룸"
+    },
+    {
+      "src": "/assets/images/live/tvn.svg",
+      "alt": "tvn",
+      "name": "줄 서는 식당 43회"
+    },
+    {
+      "src": "/assets/images/ranking/ranking3.svg",
+      "alt": "YTN",
+      "name": "뉴스가 있는 저녁"
+    },
+    {
+      "src": "/assets/images/ranking/ranking4.svg",
+      "alt": "JTBC2",
+      "name": "재벌집 막내아들 5화"
+    },
+    {
+      "src": "/assets/images/ranking/ranking5.svg",
+      "alt": "연합뉴스 TV",
+      "name": "뉴스프라임"
+    },
+    {
+      "src": "/assets/images/ranking/ranking6.svg",
+      "alt": "애니맥스",
+      "name": "명탐정코난9(자막) 33화"
     }
   ]
 }
