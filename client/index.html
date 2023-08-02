@@ -26,7 +26,7 @@
     <title>TAING</title>
   </head>
 
-  <body class=" -bg--gray-700 -font--font-family">
+  <body class="-bg--gray-700 -font--font-family">
     <!-- 헤더영역 nav -->
     <header class="header fixed z-20 flex w-[1920px] px-[70px] py-[29px]">
       <h1 class="mr-[52px] inline-block">
@@ -86,26 +86,26 @@
 
     <section class="banner relative z-10 h-[855px]">
       <div class="swiper" id="swiper">
-        <div class="swiper-wrapper h-[855px] relative">
+        <div class="swiper-wrapper relative h-[855px]">
           <!-- 배너 이미지 랜더링 부분 -->
-          </div>
         </div>
-        <!--buttons -->
-        <button
-          type="button"
-          class="swiper-button-prev opacity-50 hover:opacity-100"
-          aria-label="이전"
-          id="btnPrev"
-        ></button>
-        <button
-          type="button"
-          class="swiper-button-next opacity-50 hover:opacity-100"
-          aria-label="다음"
-          id="btnNext"
-        ></button>
+      </div>
+      <!--buttons -->
+      <button
+        type="button"
+        class="swiper-button-prev opacity-50 hover:opacity-100"
+        aria-label="이전"
+        id="btnPrev"
+      ></button>
+      <button
+        type="button"
+        class="swiper-button-next opacity-50 hover:opacity-100"
+        aria-label="다음"
+        id="btnNext"
+      ></button>
 
-        <!--pagination -->
-        <div class="navigation flex relative z-10">
+      <!--pagination -->
+      <div class="navigation relative z-10 flex">
         <div>
           <button type="button" class="bannerBtnPause play absolute z-10">
             <img src="./assets/images/Pause.svg" alt="슬라이드 정지 버튼" />
@@ -128,11 +128,9 @@
               aria-label="Go to slide 4"
             ></span>
           </div>
-      
+        </div>
+      </div>
 
-        </div>
-        </div>
-    
       <a
         href="#"
         class="banner__more absolute z-10 flex h-[78px] w-[221px] shrink-0 flex-col-reverse items-center rounded py-5 -text--paragraph-large -text--white"
