@@ -1,114 +1,104 @@
-# JavaScript Project Scaffolding
-*자바스크립트 프로젝트 환경 구성 스케폴딩*
-
-> **Note**: 해당 문서는 자바스크립트 프로젝트에 필요한 기본적인 환경 구성을 위한 [스케폴딩](https://www.wisewiredbooks.com/term-dict/common/scaffolding.html) 자료입니다. 
-
----
-
-
-패키지 설치 항목
-- [live-server](https://www.npmjs.com/package/live-server)
-- [json-server](https://www.npmjs.com/package/json-server)
-- [prettier](https://www.npmjs.com/package/prettier)
-- [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss)
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss)
-- [postcss-import](https://www.npmjs.com/package/postcss-import)
-- [npm-run-all](https://www.npmjs.com/package/npm-run-all)
-
-
----
-
-## live-server
-
-```
-로컬 환경을 실제 서버처럼 작동시켜 웹 개발을 도와주는 패키지로서 사용자가 직접 호스트,포트번호 를 바꿔서 클라이언트 서버를 구동시키고자 할때 사용됩니다.
-
-```
-
----
-## json-server
-
-```
-로컬 데이터 서버를 위한 패키지 모듈로서 DB와 API서버를 생성해주는 패키지 입니다.
-백엔드 개발에서 실제 DB와 API Server가 구축될 때까지 프론트엔드 개발에 임시적으로 사용할 mock data를 생성하기 위해 사용됩니다.
-
-```
----
-## prettier
-
-```
-협업을 위해 formatter 기능을 활용해 코드의 통일성을 유지시켜주는 패키지 입니다.
-ESLint가 코드의 퀄리티를 일관적으로 유지시켜준다면, Prettier는 일관적인 코드 스타일을 유지할 수 있게 도와줍니다. 
-
-```
----
-## prettier
-
-```
-협업을 위해 formatter 기능을 활용해 코드의 통일성을 유지시켜주는 패키지 입니다.
-ESLint가 코드의 퀄리티를 일관적으로 유지시켜준다면, Prettier는 일관적인 코드 스타일을 유지할 수 있게 도와줍니다. 
-
-```
-
----
-## prettier-plugin-tailwindcss
-
-```
-tailwind가 가지고 있는 Automatic class sorting 기능을 prettier의 기능을 활용해 자동 포멧이 일어날 수 있도록 도와주는 플러그인 패키지 입니다.
-
-```
-[Automatic class sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
-
----
-## tailwindcss
-
-```
-utility-first를 지향하는 CSS의 프레임워크으로 미리 세팅된 유틸리티 클래스를 활용하여 HTML 코드 내에서 스타일링을 가능하게 하는 style 패키지 입니다.
-tailwind가 제공하는 유틸리티 클래스들을 다양하게 조합하면 추가적인 CSS코드 작성 없이 스타일링이 가능합니다.
-
-```
-[Tailwind](https://tailwindcss.com/)
-
----
-## postcss-import
-
-```
-자바스크립트 기반의 플러그인을 사용하여 css 기능을 자동화 시키는 도구로 postcss가 가지고 있는 플러그인 환경을 사용해 css를 사용할 수 있습니다.
-css의 import 기능과 tailwind의 css 병합을 위해 사용됩니다.
-
-```
-[postcss](https://postcss.org/)
+# 📺 Like Lion Progject 13 - TAING 
+<p align="center">
+<img src = "./client/assets/images/TaingLogo.png">
+</p>
 
 
 
----
+## 📅 프로젝트 기간
+> 2023.07.28 ~ 2023.08.02
 
-## START
+<br>
+
+
+
+## ⚔️ 기술 스택 ⚔️
+
+ <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+
+<br>
+
+
+
+## 📄 웹 표준 마크업 📄
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/d892e54c-5bbf-438a-8ade-45aaa97ff68a)
+
+
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/fbff61ad-d444-433d-b3e5-41e8ea0447be)
+
+
+<br>
+
+
+
+## Commit Convention
+> [ 상세보기 ](https://github.com/lion-icandoit/Icandoit-team13/wiki)
+
+
+![image](https://github.com/lion-icandoit/Icandoit-team13/assets/111503649/018f2561-15e6-4f4b-8243-59cc3b90dae0)
+- type : subject 의 형태로 띄어쓰기로 구분
+- 타입은 영어로 작성하며, 첫 글자는 대문자로 작성
+- 제목은 50글자 이내로 제한하고, 마침표(.) 및 특수기호는 사용하지 않음
+
+<br>
+
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/25a8d855-4500-4a23-8de9-df090c58eca5)
+
+
+
+
+
+## ⚙ 크로스 브라우징 ⚙
+
+### chrome
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/0a60a3b7-2432-4f9f-a2b8-0e7b0e0eb327)
+
+### edge
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/5fafe13a-e43c-4e78-9493-9a6a48db3a69)
+
+### safari
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/086f086e-7d99-4bca-8ffd-ea98be34e033)
+
+### firefox
+![image](https://github.com/chowonn/lion-javascript/assets/70478015/c75d4401-eee3-4818-8538-835ef31faab4)
+
+
+<br>
+
+## 👩‍👩‍👧‍👦 팀원 소개 👩‍👩‍👧‍👦
+|                          이름                           | 역할 |                           담당                            |
+| :-----------------------------------------------------: | :--: | :-------------------------------------------------------: |
+|    👩 [김재희](https://github.com/jay0425)  | 조원 |    오직티빙에만있어요, 이벤트, 푸터 마크업, 스타일링 완료 , swiper.js 기능 구현              |
+|  👶[전진승](https://github.com/wlstmd1004v)   | 조원 |     실시간 인기 프로그램, 인기 LIVE 채널 마크업, 스타일링, swiper.js 기능 구현                                                   |
+| 👧 [홍다영](https://github.com/hongdayeong)   | 조원 |  티빙에서 꼭 시청해야 할 콘텐스, Quick Vod  마크업, 스타일링 완료  swiper.js 기능 구현                   |
+  👼[황초원](https://github.com/chowonn")            |조장 | 메인페이지 헤더 nav 마크업 및 스타일링 완료, 헤더 배너 부분 마크업 및 스타일링 완료 후 swiper .js 진행 
+|      |                |
+
+                
+
+<br>
+
+
+## 프로젝트 실행 방법
 
 > **Note**: 해당 프리셋은 node_modules를 내장하고 있지 않습니다. 다운받아 그대로 사용할 경우 `npm install` 을 하신 후 사용해 주세요.
+                   
 
-<br/>
 
-### 백엔드 서버 실행
-```bash
+<br>
+
+
+```
+백엔드 서버 실행
 npm run serve:backend
-```
-<br/>
 
-### 프론트 서버 실행
-```bash
+프론트 서버 실행
 npm run serve:frontend
-```
-<br/>
 
-### tailwind 실행
-```bash
+tailwind 실행
 npm run tailwind
-```
-<br/>
 
-### 동시 실행
-```bash
+동시 실행
 npm run start
 ```
 
@@ -116,9 +106,6 @@ npm run start
 
 
 
-
-
-**[⬆ back to top](#JavaScript-Project-Scaffolding)**
 
 
 
